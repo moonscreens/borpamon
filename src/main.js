@@ -86,6 +86,7 @@ for (let i = 0; i < 30; i++) {
         opacity: Math.random() * 0.25,
         side: THREE.DoubleSide,
     }));
+    line.scale.y = Math.random()*3;
     line.position.x = (Math.random() * 2 - 1) * lineSpawningRange + 45;
     line.position.y = (Math.random() * 2 - 1) * lineSpawningRange + 30 * (Math.random() > 0.5 ? -1 : 1);
     line.position.z = -40;
