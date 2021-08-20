@@ -36,7 +36,7 @@ fetch('https://sheets.googleapis.com/v4/spreadsheets/1rEePpILD6k5x8oY9_QIutsxYS8
             }
         }
 
-        fs.writeFileSync(`${__dirname}/borpas/borpadex.json`, JSON.stringify(borpadex));
+        fs.writeFileSync(`${__dirname}/borpas/borpadex.json`, JSON.stringify(borpadex, null, 4));
     })
 
 
