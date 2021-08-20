@@ -68,7 +68,7 @@ setInterval(() => {
 // the fun lines in the background
 const lines = [];
 const lineGeometry = new THREE.PlaneBufferGeometry(300, 1);
-const lineSpawningRange = 0;
+const lineSpawningRange = 1;
 for (let i = 0; i < 30; i++) {
     const line = new THREE.Mesh(lineGeometry, new THREE.MeshBasicMaterial({
         color: 0xFFFFFF,
@@ -83,7 +83,7 @@ for (let i = 0; i < 30; i++) {
     //line.rotation.x = Math.random() * Math.PI;
     line.rotation.y = (Math.random() - 0.5) * Math.PI / 2;
     line.rotation.z = Math.random() * Math.PI * 2;
-    line.speed = Math.random() * 0.25 + 0.05;
+    line.speed = Math.random() * 0.15 + 0.05;
     if (Math.random() > 0.5) line.speed *= -1;
     lines.push(line);
     scene.add(line);
