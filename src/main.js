@@ -182,7 +182,7 @@ function changeBorpa() {
     borpaNameCtx.textAlign = 'center';
     borpaNameCtx.fillText(borpadex[borpaKeys[borpaIndex]].name, borpaNameCanvas.width / 2, fontSize);
     borpaNameCtx.font = fontSize * 0.5 + 'px sans-serif';
-    borpaNameCtx.fillText('Made by ' + borpadex[borpaKeys[borpaIndex]].artist.split('#')[0], borpaNameCanvas.width / 2, fontSize * 2);
+    borpaNameCtx.fillText('Made by ' + borpadex[borpaKeys[borpaIndex]].artist, borpaNameCanvas.width / 2, fontSize * 2);
     borpaName.material.needsUpdate = true;
     borpaNameTexture.needsUpdate = true;
 
