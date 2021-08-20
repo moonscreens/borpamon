@@ -86,7 +86,7 @@ for (let i = 0; i < 30; i++) {
         opacity: Math.random() * 0.25,
         side: THREE.DoubleSide,
     }));
-    line.scale.y = Math.random()*3;
+    line.scale.y = Math.random() * 3;
     line.position.x = (Math.random() * 2 - 1) * lineSpawningRange + 45;
     line.position.y = (Math.random() * 2 - 1) * lineSpawningRange + 30 * (Math.random() > 0.5 ? -1 : 1);
     line.position.z = -40;
@@ -156,7 +156,6 @@ fetch('./borpas/borpadex.json')
         borpaKeys = borpaKeys.sort(() => Math.random() - 0.5);
 
         changeBorpa();
-        setInterval(changeBorpa, 5000);
     });
 
 function withLeadingZeros(str, length) {
@@ -194,6 +193,10 @@ function changeBorpa() {
 }
 
 
+let lastBorpaTime = Date.now();
+const borpaDuration = 10000;
+const transitionDuration = 1000;
+
 let lastFrame = Date.now();
 // Called once per frame
 function draw() {
@@ -201,6 +204,21 @@ function draw() {
 
     // number of seconds since the last frame was drawn
     const delta = (Date.now() - lastFrame) / 1000;
+
+    if (Date.now() - lastBorpaTime > borpaDuration) {
+        changeBorpa();
+        lastBorpaTime = Date.now();
+    }
+
+    if (Date.now() - lastBorpaTime < transitionDuration) {
+        const p = (Date.now() - lastBorpaTime) / transitionDuration;
+        borpa.rotation.z = (1 - (1 - p) * (1 - p)) * Math.PI * 10;
+    } else if (Date.now() - lastBorpaTime > borpaDuration - transitionDuration) {
+        const p = (borpaDuration - (Date.now() - lastBorpaTime)) / transitionDuration;
+        borpa.rotation.z = (1 - (1 - p) * (1 - p)) * Math.PI * 10;
+    } else {
+        borpa.rotation.z = Math.sin(Date.now() / 10000) * 0.25;
+    }
 
     // update materials for animated emotes
     for (const key in emoteMaterials) {
