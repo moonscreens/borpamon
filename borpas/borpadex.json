@@ -258,12 +258,33 @@
         "imagePath": "/borpas/108.png",
         "artist": "brain#2332"
     },
+    "120": {
+        "number": "120",
+        "originalName": "Staryu",
+        "name": "Borpyu",
+        "imagePath": "/borpas/120.png",
+        "artist": "Ninjagnome66#6969"
+    },
+    "121": {
+        "number": "121",
+        "originalName": "Starmie",
+        "name": "Borpmie",
+        "imagePath": "/borpas/121.png",
+        "artist": "Ninjagnome66#6969"
+    },
     "122": {
         "number": "122",
         "originalName": "Mr. Mime",
         "name": "Mr. Morpa",
         "imagePath": "/borpas/122.png",
         "artist": "DTK#6969"
+    },
+    "129": {
+        "number": "129",
+        "originalName": "Magikarp",
+        "name": "Magicum",
+        "imagePath": "/borpas/129.png",
+        "artist": "Phil T Weeb#0001"
     },
     "130": {
         "number": "130",
@@ -299,6 +320,13 @@
         "name": "Borptad",
         "imagePath": "/borpas/270.png",
         "artist": "Mark0#0713"
+    },
+    "351": {
+        "number": "351",
+        "originalName": "Castform",
+        "name": "Borpaform",
+        "imagePath": "/borpas/351.png",
+        "artist": "Filithorn#6769"
     },
     "420": {
         "number": "420",
