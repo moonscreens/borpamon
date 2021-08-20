@@ -138,6 +138,8 @@ function draw() {
     lastFrame = Date.now();
 }
 
+
+const spriteGeometry = new THREE.PlaneBufferGeometry(1, 1);
 // add a callback function for when a new message with emotes is sent
 const emoteArray = [];
 ChatInstance.on("emotes", (emotes) => {
@@ -147,9 +149,11 @@ ChatInstance.on("emotes", (emotes) => {
     group.position.y = 0;
     group.dateSpawned = Date.now();
 
-    group.velocity = new THREE.Vector3(Math.random() * 0.75 + 0.25, Math.random() - 0.5, 0);
-    group.velocity.normalize();
+    const direction = (Math.random() * Math.PI / 2) + Math.PI / 4;
+    group.velocity = new THREE.Vector3(Math.sin(direction), Math.cos(direction, 0));
     group.velocity.multiplyScalar(1.5);
+
+    group.rotation.z = -direction + Math.PI / 2;
 
     group.scale.setScalar(0.5);
 
@@ -166,12 +170,12 @@ ChatInstance.on("emotes", (emotes) => {
             // Feel free to change this from a nearest neighbor upsampling method to match your visual style
             emoteTextures[emote.id].magFilter = THREE.NearestFilter;
 
-            emoteMaterials[emote.id] = new THREE.SpriteMaterial({
+            emoteMaterials[emote.id] = new THREE.MeshBasicMaterial({
                 map: emoteTextures[emote.id],
                 transparent: true,
             });
         }
-        const sprite = new THREE.Sprite(emoteMaterials[emote.id]);
+        const sprite = new THREE.Mesh(spriteGeometry, emoteMaterials[emote.id]);
         sprite.position.x = index;
 
         group.add(sprite);
