@@ -35,11 +35,20 @@ const renderer = new THREE.WebGLRenderer({
 });
 document.body.appendChild(renderer.domElement);
 
+function resize() {
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+}
+resize();
+window.addEventListener('resize', resize);
+
 scene.background = new THREE.Color(0xD7130E);
 
 import frame1Src from './1.png';
 import frame2Src from './2.png';
 import frame3Src from './3.png';
+import fetch from 'node-fetch';
 const frames = [
     new THREE.TextureLoader().load(frame1Src),
     new THREE.TextureLoader().load(frame2Src),
@@ -89,13 +98,47 @@ for (let i = 0; i < 30; i++) {
     scene.add(line);
 }
 
-function resize() {
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
+const borpa = new THREE.Mesh(
+    new THREE.PlaneBufferGeometry(1, 1),
+    new THREE.MeshBasicMaterial({
+        color: 0xFFFFFF,
+        transparent: true,
+    })
+);
+borpa.position.z = 2;
+borpa.position.x = -3;
+borpa.scale.setScalar(4);
+scene.add(borpa);
+
+const borpadex = {};
+let borpaKeys = [];
+let borpaIndex = -1;
+fetch('./borpas/borpadex.json')
+    .then(res => res.json())
+    .then(json => {
+        for (const key in json) {
+            if (Object.hasOwnProperty.call(json, key)) {
+                const element = json[key];
+                borpadex[key] = {
+                    texture: new THREE.TextureLoader().load(element.imagePath),
+                    ...element,
+                }
+            }
+        }
+        borpaKeys = Object.keys(borpadex);
+        //shuffle borpaKeys
+        borpaKeys = borpaKeys.sort(() => Math.random() - 0.5);
+
+        changeBorpa();
+        setInterval(changeBorpa, 5000);
+    });
+
+function changeBorpa () {
+    borpaIndex++;
+    if (borpaIndex >= borpaKeys.length) borpaIndex = 0;
+    borpa.material.map = borpadex[borpaKeys[borpaIndex]].texture;
+    borpa.material.needsUpdate = true;
 }
-resize();
-window.addEventListener('resize', resize);
 
 
 let lastFrame = Date.now();
