@@ -9,3 +9,15 @@ canvas {
     height: 100%;
     margin: 0;
 }
+
+.logo {
+    background-image: url(borpamon_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 2vmin;
+    right: 20vmin;
+    width: 70vmin;
+    height: 30vmin;
+}

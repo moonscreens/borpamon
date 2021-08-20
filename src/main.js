@@ -30,11 +30,64 @@ camera.position.z = 10;
 
 const scene = new THREE.Scene();
 const renderer = new THREE.WebGLRenderer({
-    antialias: false,
+    antialias: true,
     alpha: false
 });
 document.body.appendChild(renderer.domElement);
 
+scene.background = new THREE.Color(0xD7130E);
+
+import frame1Src from './1.png';
+import frame2Src from './2.png';
+import frame3Src from './3.png';
+const frames = [
+    new THREE.TextureLoader().load(frame1Src),
+    new THREE.TextureLoader().load(frame2Src),
+    new THREE.TextureLoader().load(frame3Src),
+];
+let frameIndex = 0;
+const shinyMaterial = new THREE.SpriteMaterial({
+    map: frames[0],
+});
+const shinyThingy = new THREE.Sprite(shinyMaterial);
+shinyThingy.scale.setScalar(15);
+shinyThingy.scale.y /= 1.777;
+shinyThingy.position.z += 1
+scene.add(shinyThingy);
+
+setInterval(() => {
+    frameIndex += 1;
+    if (frameIndex >= frames.length) {
+        frameIndex = 0;
+    }
+
+    shinyMaterial.map = frames[frameIndex];
+    shinyMaterial.needsUpdate = true;
+}, 100);
+
+// the fun lines in the background
+const lines = [];
+const lineGeometry = new THREE.PlaneBufferGeometry(300, 1);
+const lineSpawningRange = 0;
+for (let i = 0; i < 30; i++) {
+    const line = new THREE.Mesh(lineGeometry, new THREE.MeshBasicMaterial({
+        color: 0xFFFFFF,
+        transparent: true,
+        blending: THREE.AdditiveBlending,
+        opacity: Math.random() * 0.25,
+        side: THREE.DoubleSide,
+    }));
+    line.position.x = (Math.random() * 2 - 1) * lineSpawningRange + 45;
+    line.position.y = (Math.random() * 2 - 1) * lineSpawningRange + 30 * (Math.random() > 0.5 ? -1 : 1);
+    line.position.z = -40;
+    //line.rotation.x = Math.random() * Math.PI;
+    line.rotation.y = (Math.random() - 0.5) * Math.PI / 2;
+    line.rotation.z = Math.random() * Math.PI * 2;
+    line.speed = Math.random() * 0.25 + 0.05;
+    if (Math.random() > 0.5) line.speed *= -1;
+    lines.push(line);
+    scene.add(line);
+}
 
 function resize() {
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -54,25 +107,27 @@ function draw() {
     const delta = (Date.now() - lastFrame) / 1000;
 
     // update materials for animated emotes
-	for (const key in emoteMaterials) {
-		if (Object.hasOwnProperty.call(emoteMaterials, key)) {
-			emoteMaterials[key].needsUpdate = true;
-			emoteTextures[key].needsUpdate = true;
-		}
-	}
+    for (const key in emoteMaterials) {
+        if (Object.hasOwnProperty.call(emoteMaterials, key)) {
+            emoteMaterials[key].needsUpdate = true;
+            emoteTextures[key].needsUpdate = true;
+        }
+    }
 
-    for (let index = emoteArray.length-1; index >= 0; index--) {
+    for (let index = 0; index < lines.length; index++) {
+        lines[index].rotation.z += delta * 0.1 * lines[index].speed;
+
+    }
+
+    for (let index = emoteArray.length - 1; index >= 0; index--) {
         const element = emoteArray[index];
 
-	// Emotes will travel either towards or away from the camera as a basic example
-        if (index % 2) {
-            element.position.z += delta;
-        } else {
-            element.position.z -= delta;
-        }
-        
-	// Remove a given set of emotes after 10 seconds have passed
-        if (element.dateSpawned < Date.now() - 10000) {
+        element.position.x += element.velocity.x * delta;
+        element.position.y += element.velocity.y * delta;
+        element.position.z += element.velocity.z * delta;
+
+        // Remove a given set of emotes after 15 seconds have passed
+        if (element.dateSpawned < Date.now() - 15000) {
             scene.remove(element);
             emoteArray.splice(index, 1);
         }
@@ -88,20 +143,27 @@ const emoteArray = [];
 ChatInstance.on("emotes", (emotes) => {
     const group = new THREE.Group();
 
-    group.position.x = Math.random() * 5 - 2.5,
-    group.position.y = Math.random() * 5 - 2.5,
-    group.dateSpawned = Date.now()
+    group.position.x = -5;
+    group.position.y = 0;
+    group.dateSpawned = Date.now();
+
+    group.velocity = new THREE.Vector3(Math.random() * 0.75 + 0.25, Math.random() - 0.5, 0);
+    group.velocity.normalize();
+    group.velocity.multiplyScalar(1.5);
+
+    group.scale.setScalar(0.5);
+
 
     for (let index = 0; index < emotes.length; index++) {
         const emote = emotes[index];
 
-	// cache textures/materials to save on GPU bandwidth, otherwise a material would need to be generated for every unique use of the same emote
+        // cache textures/materials to save on GPU bandwidth, otherwise a material would need to be generated for every unique use of the same emote
         if (!emoteTextures[emote.id]) {
             emoteSources[emote.id] = emote;
             emoteTextures[emote.id] = new THREE.CanvasTexture(emote.gif.canvas);
             emoteTextures[emote.id].emote = emote;
-	    
-	    // Feel free to change this from a nearest neighbor upsampling method to match your visual style
+
+            // Feel free to change this from a nearest neighbor upsampling method to match your visual style
             emoteTextures[emote.id].magFilter = THREE.NearestFilter;
 
             emoteMaterials[emote.id] = new THREE.SpriteMaterial({
