@@ -1,4 +1,3 @@
-const dotenv = require('dotenv');
 const { createCanvas, loadImage } = require('canvas');
 require('dotenv').config();
 const fetch = require('node-fetch');
