@@ -146,6 +146,13 @@
         "imagePath": "/borpas/25.png",
         "artist": "Szkud#1524"
     },
+    "37": {
+        "number": "37",
+        "originalName": "Vulpix",
+        "name": "Borpix",
+        "imagePath": "/borpas/37.png",
+        "artist": "VernalEquinox#5513"
+    },
     "50": {
         "number": "50",
         "originalName": "Diglett",
@@ -271,6 +278,13 @@
         "name": "Vaborpeon",
         "imagePath": "/borpas/134.png",
         "artist": "MattVar#2178"
+    },
+    "420": {
+        "number": "420",
+        "originalName": "Cherubi",
+        "name": "Borpubi",
+        "imagePath": "/borpas/420.png",
+        "artist": "DTK#6969"
     },
     "487": {
         "number": "487",
