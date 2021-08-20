@@ -293,6 +293,13 @@
         "imagePath": "/borpas/134.png",
         "artist": "MattVar#2178"
     },
+    "270": {
+        "number": "270",
+        "originalName": "Lotad",
+        "name": "Borptad",
+        "imagePath": "/borpas/270.png",
+        "artist": "Mark0#0713"
+    },
     "420": {
         "number": "420",
         "originalName": "Cherubi",
