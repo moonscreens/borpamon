@@ -254,7 +254,7 @@
     "108": {
         "number": "108",
         "originalName": "Lickitung",
-        "name": "Lickicum",
+        "name": "Borpitung",
         "imagePath": "/borpas/108.png",
         "artist": "brain#2332"
     },
@@ -376,6 +376,13 @@
         "name": "Borpadude",
         "imagePath": "/borpas/74b.png",
         "artist": "skelly#5011"
+    },
+    "108b": {
+        "number": "108b",
+        "originalName": "Lickitung",
+        "name": "Lickicum",
+        "imagePath": "/borpas/108b.png",
+        "artist": "brain#2332"
     },
     "137a": {
         "number": "137a",
