@@ -57,6 +57,10 @@ const frames = [
 let frameIndex = 0;
 const shinyMaterial = new THREE.SpriteMaterial({
     map: frames[0],
+    transparent: true,
+    color: 0xffffff,
+    //blending: THREE.AdditiveBlending,
+    opacity: 0.9,
 });
 const shinyThingy = new THREE.Sprite(shinyMaterial);
 shinyThingy.scale.setScalar(15);
@@ -91,7 +95,7 @@ for (let i = 0; i < 30; i++) {
     line.position.y = (Math.random() * 2 - 1) * lineSpawningRange + 30 * (Math.random() > 0.5 ? -1 : 1);
     line.position.z = -40;
     //line.rotation.x = Math.random() * Math.PI;
-    line.rotation.y = (Math.random() - 0.5) * Math.PI / 2;
+    line.rotation.y = (Math.random() - 0.5) * Math.PI / 3;
     line.rotation.z = Math.random() * Math.PI * 2;
     line.speed = Math.random() * 0.15 + 0.05;
     if (Math.random() > 0.5) line.speed *= -1;
