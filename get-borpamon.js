@@ -10,6 +10,13 @@ const downloadFile = (async (url, path) => {
     const ctx = canvas.getContext('2d');
     ctx.drawImage(image, max / 2 - image.width / 2, max / 2 - image.height / 2);
 
+    const tempCanvas = createCanvas(1024, 1024);
+    const tempCtx = tempCanvas.getContext('2d');
+    tempCtx.drawImage(canvas, 0, 0, 1024, 1024);
+    canvas.width = 1024;
+    canvas.height = 1024;
+    ctx.drawImage(tempCanvas, 0, 0);
+
     const out = fs.createWriteStream(path)
     const stream = canvas.createPNGStream()
     stream.pipe(out)
