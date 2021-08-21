@@ -2,6 +2,9 @@ import './main.css';
 import * as THREE from "three";
 import Chat from 'twitch-chat-emotes';
 
+const defaultFont = 'sans-serif';
+const fancyFont = 'Cursive';
+
 // a default array of twitch channels to join
 let channels = ['moonmoon'];
 
@@ -178,10 +181,10 @@ function changeBorpa() {
     borpaNameCtx.clearRect(0, 0, 512, 512);
     borpaNameCtx.fillStyle = '#000000';
     const fontSize = 48;
-    borpaNameCtx.font = fontSize + 'px sans-serif';
+    borpaNameCtx.font = fontSize + 'px '+fancyFont;
     borpaNameCtx.textAlign = 'center';
     borpaNameCtx.fillText(borpadex[borpaKeys[borpaIndex]].name, borpaNameCanvas.width / 2, fontSize);
-    borpaNameCtx.font = fontSize * 0.5 + 'px sans-serif';
+    borpaNameCtx.font = fontSize * 0.5 + 'px '+defaultFont;
     borpaNameCtx.fillText('Made by ' + borpadex[borpaKeys[borpaIndex]].artist, borpaNameCanvas.width / 2, fontSize * 2);
     borpaName.material.needsUpdate = true;
     borpaNameTexture.needsUpdate = true;
@@ -189,10 +192,10 @@ function changeBorpa() {
 
     borpaNumberCtx.clearRect(0, 0, 512, 512);
     borpaNumberCtx.fillStyle = '#000000';
-    borpaNumberCtx.font = fontSize + 'px sans-serif';
+    borpaNumberCtx.font = fontSize + 'px '+fancyFont;
     borpaNumberCtx.textAlign = 'center';
     borpaNumberCtx.fillText(`#${withLeadingZeros(borpaKeys[borpaIndex], 4)}`, borpaNumberCanvas.width / 2, borpaNumberCanvas.height - fontSize);
-    borpaNumberCtx.font = (fontSize/2) + 'px sans-serif';
+    borpaNumberCtx.font = (fontSize/2) + 'px '+defaultFont;
     borpaNumberCtx.fillText(`${borpadex[borpaKeys[borpaIndex]].originalName}`, borpaNumberCanvas.width / 2, borpaNumberCanvas.height - fontSize*2);
     borpaNumber.material.needsUpdate = true;
     borpaNumberTexture.needsUpdate = true;
