@@ -52,9 +52,11 @@ fetch('https://sheets.googleapis.com/v4/spreadsheets/1rEePpILD6k5x8oY9_QIutsxYS8
             if (element[3] && element[3].length > 7 && element[0] && element[0].length > 0) {
                 count++;
                 const imagePath = `/borpas/${element[0]}.png`;
-                setTimeout(() => {
-                    downloadFile(element[3], `${__dirname}${imagePath}`);
-                }, 250 * count);
+                if (!fs.existsSync(`${__dirname}${imagePath}`) || true) {
+                    setTimeout(() => {
+                        downloadFile(element[3], `${__dirname}${imagePath}`);
+                    }, 325 * count);
+                }
                 borpadex[element[0]] = {
                     number: element[0],
                     originalName: element[1],
