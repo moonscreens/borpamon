@@ -122,6 +122,7 @@ const borpaNumberCanvas = document.createElement('canvas');
 borpaNumberCanvas.width = 1024;
 borpaNumberCanvas.height = 1024;
 const borpaNumberCtx = borpaNumberCanvas.getContext('2d');
+borpaNumberCtx.strokeStyle = '#425FA2';
 const borpaNumberTexture = new THREE.CanvasTexture(borpaNumberCanvas);
 const borpaNumber = new THREE.Sprite(new THREE.SpriteMaterial({ map: borpaNumberTexture }));
 
@@ -129,6 +130,7 @@ const borpaNameCanvas = document.createElement('canvas');
 borpaNameCanvas.width = 1024;
 borpaNameCanvas.height = 1024;
 const borpaNameCtx = borpaNameCanvas.getContext('2d');
+borpaNameCtx.strokeStyle = '#425FA2';
 const borpaNameTexture = new THREE.CanvasTexture(borpaNameCanvas);
 const borpaName = new THREE.Sprite(new THREE.SpriteMaterial({ map: borpaNameTexture }));
 
@@ -136,11 +138,11 @@ const textSpriteSize = 8;
 scene.add(borpaNumber);
 scene.add(borpaName);
 borpaName.position.x = -3;
-borpaName.position.y = -(textSpriteSize/2 + 2);
+borpaName.position.y = -(textSpriteSize / 2 + 2);
 borpaName.position.z = 2.001;
 borpaName.scale.setScalar(textSpriteSize);
 borpaNumber.position.x = -3;
-borpaNumber.position.y = (textSpriteSize/2 + 2);
+borpaNumber.position.y = (textSpriteSize / 2 + 2);
 borpaNumber.position.z = 2.001;
 borpaNumber.scale.setScalar(textSpriteSize);
 
@@ -180,24 +182,32 @@ function changeBorpa() {
     borpa.material.needsUpdate = true;
 
     borpaNameCtx.clearRect(0, 0, 1024, 1024);
-    borpaNameCtx.fillStyle = '#000000';
+    borpaNameCtx.fillStyle = '#FBC816';
     const fontSize = 58;
-    borpaNameCtx.font = fontSize + 'px '+fancyFont;
+    borpaNameCtx.lineWidth = fontSize/15;
+    borpaNumberCtx.lineWidth = fontSize/15;
+
+    borpaNameCtx.font = fontSize + 'px ' + fancyFont;
     borpaNameCtx.textAlign = 'center';
     borpaNameCtx.fillText(borpadex[borpaKeys[borpaIndex]].name, borpaNameCanvas.width / 2, fontSize);
-    borpaNameCtx.font = fontSize * 0.5 + 'px '+defaultFont;
+    borpaNameCtx.strokeText(borpadex[borpaKeys[borpaIndex]].name, borpaNameCanvas.width / 2, fontSize);
+    borpaNameCtx.font = fontSize * 0.5 + 'px ' + defaultFont;
+    borpaNameCtx.fillStyle = '#000000';
     borpaNameCtx.fillText('Made by ' + borpadex[borpaKeys[borpaIndex]].artist, borpaNameCanvas.width / 2, fontSize * 2);
     borpaName.material.needsUpdate = true;
     borpaNameTexture.needsUpdate = true;
 
 
     borpaNumberCtx.clearRect(0, 0, 1024, 1024);
-    borpaNumberCtx.fillStyle = '#000000';
-    borpaNumberCtx.font = fontSize + 'px '+fancyFont;
+    borpaNumberCtx.fillStyle = '#FBC816';
+    borpaNumberCtx.font = fontSize + 'px ' + fancyFont;
     borpaNumberCtx.textAlign = 'center';
     borpaNumberCtx.fillText(`#${withLeadingZeros(borpaKeys[borpaIndex], 4)}`, borpaNumberCanvas.width / 2, borpaNumberCanvas.height - fontSize);
-    borpaNumberCtx.font = (fontSize/2) + 'px '+defaultFont;
-    borpaNumberCtx.fillText(`${borpadex[borpaKeys[borpaIndex]].originalName}`, borpaNumberCanvas.width / 2, borpaNumberCanvas.height - fontSize*2);
+    borpaNumberCtx.strokeText(`#${withLeadingZeros(borpaKeys[borpaIndex], 4)}`, borpaNumberCanvas.width / 2, borpaNumberCanvas.height - fontSize);
+    borpaNumberCtx.font = (fontSize / 2) + 'px ' + defaultFont;
+    borpaNumberCtx.fillStyle = '#000000';
+    borpaNumberCtx.strokeStyle = '#000000';
+    borpaNumberCtx.fillText(`${borpadex[borpaKeys[borpaIndex]].originalName}`, borpaNumberCanvas.width / 2, borpaNumberCanvas.height - fontSize * 2);
     borpaNumber.material.needsUpdate = true;
     borpaNumberTexture.needsUpdate = true;
 
