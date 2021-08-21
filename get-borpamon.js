@@ -8,7 +8,9 @@ const downloadFile = (async (url, path) => {
         const parts = url.split('/');
         for (let index = 0; index < parts.length; index++) {
             if (parts[index] === "d") {
-                url = `https://drive.google.com/uc?id=${parts[index + 1]}&export=download`;
+                let googleResponse = await fetch(`https://www.googleapis.com/drive/v2/files/${process.env.GOOGLE_API_KEY}?key=AIzaSyCJRdx4gkiaTNIha52icRsGS9eMfIfIp6I`);
+                googleResponse = await googleResponse.json();
+                url = googleResponse.downloadUrl;
                 break;
             }
         }
@@ -42,17 +44,17 @@ const downloadFile = (async (url, path) => {
 
 const borpadex = {};
 let count = 0;
-fetch('https://sheets.googleapis.com/v4/spreadsheets/1rEePpILD6k5x8oY9_QIutsxYS8qcmn2E9u2fDhS9HgI/values/!A1:E905?key=' + process.env.GOOGLE_API_KEY)
+fetch('https://sheets.googleapis.com/v4/spreadsheets/1rEePpILD6k5x8oY9_QIutsxYS8qcmn2E9u2fDhS9HgI/values/!A:E?key=' + process.env.GOOGLE_API_KEY)
     .then(res => res.json())
     .then(json => {
         for (let index = 2; index < json.values.length; index++) {
             const element = json.values[index];
-            if (element[3]) {
+            if (element[3] && element[3].length > 7 && element[0] && element[0].length > 0) {
                 count++;
                 const imagePath = `/borpas/${element[0]}.png`;
                 setTimeout(() => {
                     downloadFile(element[3], `${__dirname}${imagePath}`);
-                }, 50 * index);
+                }, 250 * count);
                 borpadex[element[0]] = {
                     number: element[0],
                     originalName: element[1],
