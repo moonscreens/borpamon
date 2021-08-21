@@ -4,7 +4,7 @@
         "originalName": "MissingNo.",
         "name": "MissingBor.",
         "imagePath": "/borpas/0.png",
-        "artist": "Gunthixkid#0048\n"
+        "artist": "Gunthixkid#0048"
     },
     "1": {
         "number": "1",
@@ -433,6 +433,13 @@
         "imagePath": "/borpas/132.png",
         "artist": "stohk#7450"
     },
+    "133": {
+        "number": "133",
+        "originalName": "Eevee",
+        "name": "Borpeevee",
+        "imagePath": "/borpas/133.png",
+        "artist": "HazardDan#0013"
+    },
     "134": {
         "number": "134",
         "originalName": "Vaporeon",
@@ -495,6 +502,13 @@
         "name": "Borpi",
         "imagePath": "/borpas/175.png",
         "artist": "Coop#0440"
+    },
+    "194": {
+        "number": "194",
+        "originalName": "Wooper",
+        "name": "Boorper",
+        "imagePath": "/borpas/194.png",
+        "artist": "mannydiller#9009"
     },
     "202": {
         "number": "202",
@@ -852,5 +866,26 @@
         "name": "Borpamax Borpatus",
         "imagePath": "/borpas/890e.png",
         "artist": "Larrel"
+    },
+    "brocka": {
+        "number": "brocka",
+        "originalName": "Brock A",
+        "name": "Borck",
+        "imagePath": "/borpas/brocka.png",
+        "artist": "keylax#1859"
+    },
+    "brockb": {
+        "number": "brockb",
+        "originalName": "Brock B",
+        "name": "Borck",
+        "imagePath": "/borpas/brockb.png",
+        "artist": "keylax#1859 booty#6434"
+    },
+    "profoak": {
+        "number": "profoak",
+        "originalName": "Professor Oak",
+        "name": "Borpfessor Oak",
+        "imagePath": "/borpas/profoak.png",
+        "artist": "keylax#1859"
     }
 }
