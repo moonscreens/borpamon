@@ -3,7 +3,7 @@ import * as THREE from "three";
 import Chat from 'twitch-chat-emotes';
 
 const defaultFont = 'sans-serif';
-const fancyFont = 'Cursive';
+const fancyFont = 'Pokemon, Cursive';
 
 // a default array of twitch channels to join
 let channels = ['moonmoon'];

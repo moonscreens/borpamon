@@ -1,6 +1,10 @@
 :root {
     background-color: black;
 }
+@font-face {
+    font-family: "Pokemon";
+    src: url("./Pokemon_Solid.ttf") format("truetype");
+}
 
 html,
 body,
