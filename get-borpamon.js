@@ -8,10 +8,16 @@ const downloadFile = (async (url, path) => {
         const parts = url.split('/');
         for (let index = 0; index < parts.length; index++) {
             if (parts[index] === "d") {
-                let googleResponse = await fetch(`https://www.googleapis.com/drive/v2/files/${process.env.GOOGLE_API_KEY}?key=AIzaSyCJRdx4gkiaTNIha52icRsGS9eMfIfIp6I`);
-                googleResponse = await googleResponse.json();
-                url = googleResponse.downloadUrl;
-                break;
+                try {
+                    let googleResponse = await fetch(`https://www.googleapis.com/drive/v2/files/${parts[index+1]}?key=${process.env.GOOGLE_API_KEY}`);
+                    googleResponse = await googleResponse.json();
+                    url = googleResponse.downloadUrl;
+                } catch (e) {
+                    console.error(e);
+                    console.log('the URL ', url, 'failed to fetch info from google drive');
+                    return;
+                }
+                index = parts.length;
             }
         }
     }
@@ -36,7 +42,7 @@ const downloadFile = (async (url, path) => {
     ctx.drawImage(tempCanvas, 0, 0);
 
     const out = fs.createWriteStream(path)
-    const stream = canvas.createPNGStream()
+    const stream = canvas.createPNGStream();
     stream.pipe(out)
     console.log(`Downloaded ${path}`);
 });
@@ -49,13 +55,16 @@ fetch('https://sheets.googleapis.com/v4/spreadsheets/1rEePpILD6k5x8oY9_QIutsxYS8
     .then(json => {
         for (let index = 2; index < json.values.length; index++) {
             const element = json.values[index];
-            if (element[3] && element[3].length > 7 && element[0] && element[0].length > 0) {
+            if (element.length >= 4 && element[3] && element[3].toLowerCase().includes('http')) {
                 count++;
                 const imagePath = `/borpas/${element[0]}.png`;
                 if (!fs.existsSync(`${__dirname}${imagePath}`) || true) {
                     setTimeout(() => {
                         downloadFile(element[3], `${__dirname}${imagePath}`);
-                    }, 325 * count);
+                    }, 500 * count);
+                }
+                if (borpadex[element[0]] !== undefined) {
+                    console.log(`${element[0]} already exists`);
                 }
                 borpadex[element[0]] = {
                     number: element[0],
