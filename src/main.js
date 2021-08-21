@@ -206,7 +206,6 @@ function changeBorpa() {
     borpaNumberCtx.strokeText(`#${withLeadingZeros(borpaKeys[borpaIndex], 4)}`, borpaNumberCanvas.width / 2, borpaNumberCanvas.height - fontSize);
     borpaNumberCtx.font = (fontSize / 2) + 'px ' + defaultFont;
     borpaNumberCtx.fillStyle = '#000000';
-    borpaNumberCtx.strokeStyle = '#000000';
     borpaNumberCtx.fillText(`${borpadex[borpaKeys[borpaIndex]].originalName}`, borpaNumberCanvas.width / 2, borpaNumberCanvas.height - fontSize * 2);
     borpaNumber.material.needsUpdate = true;
     borpaNumberTexture.needsUpdate = true;
