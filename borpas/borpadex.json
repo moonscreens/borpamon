@@ -240,7 +240,7 @@
     "44": {
         "number": "44",
         "originalName": "Gloom",
-        "name": "Coom",
+        "name": "coom",
         "imagePath": "/borpas/44.png",
         "artist": "Toona#9999"
     },
@@ -669,6 +669,13 @@
         "originalName": "Kabutops",
         "name": "Borputops",
         "imagePath": "/borpas/141.png",
+        "artist": "Beeched_Whale#3864"
+    },
+    "142": {
+        "number": "142",
+        "originalName": "Aerodactyl",
+        "name": "Borpodactyl",
+        "imagePath": "/borpas/142.png",
         "artist": "Beeched_Whale#3864"
     },
     "143": {
