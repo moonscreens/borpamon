@@ -192,6 +192,8 @@ function changeBorpa() {
     borpaNumberCtx.font = fontSize + 'px sans-serif';
     borpaNumberCtx.textAlign = 'center';
     borpaNumberCtx.fillText(`#${withLeadingZeros(borpaKeys[borpaIndex], 4)}`, borpaNumberCanvas.width / 2, borpaNumberCanvas.height - fontSize);
+    borpaNumberCtx.font = (fontSize/2) + 'px sans-serif';
+    borpaNumberCtx.fillText(`${borpadex[borpaKeys[borpaIndex]].originalName}`, borpaNumberCanvas.width / 2, borpaNumberCanvas.height - fontSize*2);
     borpaNumber.material.needsUpdate = true;
     borpaNumberTexture.needsUpdate = true;
 }
