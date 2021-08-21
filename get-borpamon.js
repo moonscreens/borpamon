@@ -4,7 +4,23 @@ const fetch = require('node-fetch');
 const fs = require('fs');
 
 const downloadFile = (async (url, path) => {
-    const image = await loadImage(url);
+    if (url.toLowerCase().includes('drive.google.com')) {
+        const parts = url.split('/');
+        for (let index = 0; index < parts.length; index++) {
+            if (parts[index] === "d") {
+                url = `https://drive.google.com/uc?id=${parts[index + 1]}&export=download`;
+                break;
+            }
+        }
+    }
+    let image = null;
+    try {
+        image = await loadImage(url);
+    } catch (e) {
+        console.error(e);
+        console.log('the URL ', url, 'failed to download');
+        return;
+    }
     const max = Math.max(image.width, image.height);
     const canvas = createCanvas(max, max);
     const ctx = canvas.getContext('2d');
@@ -29,7 +45,7 @@ let count = 0;
 fetch('https://sheets.googleapis.com/v4/spreadsheets/1rEePpILD6k5x8oY9_QIutsxYS8qcmn2E9u2fDhS9HgI/values/!A1:E905?key=' + process.env.GOOGLE_API_KEY)
     .then(res => res.json())
     .then(json => {
-        for (let index = 1; index < json.values.length; index++) {
+        for (let index = 2; index < json.values.length; index++) {
             const element = json.values[index];
             if (element[3]) {
                 count++;
