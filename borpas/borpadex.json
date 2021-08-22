@@ -468,6 +468,13 @@
         "imagePath": "/borpas/84.webp",
         "artist": "Beeched_whale#3864"
     },
+    "85": {
+        "number": "85",
+        "originalName": "Dodrio",
+        "name": "Borptrio",
+        "imagePath": "/borpas/85.webp",
+        "artist": "mannydiller#9009"
+    },
     "86": {
         "number": "86",
         "originalName": "Seel",
@@ -804,13 +811,6 @@
         "imagePath": "/borpas/149.webp",
         "artist": "ekletters#2157"
     },
-    "150": {
-        "number": "150",
-        "originalName": "Mewtwo",
-        "name": "Mewtorpa",
-        "imagePath": "/borpas/150.webp",
-        "artist": "zugzugmine#5851"
-    },
     "151": {
         "number": "151",
         "originalName": "Mew",
@@ -979,6 +979,13 @@
         "imagePath": "/borpas/218.webp",
         "artist": "Beeched_whale#3864"
     },
+    "235": {
+        "number": "235",
+        "originalName": "Smeargle",
+        "name": "Smearcum (It's paint)",
+        "imagePath": "/borpas/235.webp",
+        "artist": "showshank#2112"
+    },
     "236": {
         "number": "236",
         "originalName": "Tyrogue",
@@ -1027,6 +1034,13 @@
         "name": "Treepa",
         "imagePath": "/borpas/252.webp",
         "artist": "Solaris#1333"
+    },
+    "255": {
+        "number": "255",
+        "originalName": "Torchic",
+        "name": "Borpchic",
+        "imagePath": "/borpas/255.webp",
+        "artist": "Mudkip#8008"
     },
     "258": {
         "number": "258",
@@ -1567,6 +1581,13 @@
         "imagePath": "/borpas/470.webp",
         "artist": "Nekomusume#1071"
     },
+    "471": {
+        "number": "471",
+        "originalName": "Glaceon",
+        "name": "Glorpceon",
+        "imagePath": "/borpas/471.webp",
+        "artist": "plebbot#2834"
+    },
     "479": {
         "number": "479",
         "originalName": "Rotom",
@@ -1853,6 +1874,13 @@
         "name": "Woolorpa",
         "imagePath": "/borpas/831.webp",
         "artist": "Adam#1905"
+    },
+    "840": {
+        "number": "840",
+        "originalName": "Applin",
+        "name": "Borpplin",
+        "imagePath": "/borpas/840.webp",
+        "artist": "showshank#2112"
     },
     "845": {
         "number": "845",
@@ -2294,6 +2322,20 @@
         "name": "Borptres (Galar)",
         "imagePath": "/borpas/146b.webp",
         "artist": "blub#6493"
+    },
+    "150a": {
+        "number": "150a",
+        "originalName": "Mewtwo",
+        "name": "Borptwo",
+        "imagePath": "/borpas/150a.webp",
+        "artist": "OrangeJuice#1559"
+    },
+    "150b": {
+        "number": "150b",
+        "originalName": "Mewtwo",
+        "name": "Mewtorpa",
+        "imagePath": "/borpas/150b.webp",
+        "artist": "zugzugmine#5851"
     },
     "151b": {
         "number": "151b",
