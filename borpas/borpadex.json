@@ -272,6 +272,13 @@
         "imagePath": "/borpas/48.webp",
         "artist": "plebbot#2834"
     },
+    "49": {
+        "number": "49",
+        "originalName": "Venomoth",
+        "name": "Borpomoth",
+        "imagePath": "/borpas/49.webp",
+        "artist": "Beeched_whale#3864"
+    },
     "50": {
         "number": "50",
         "originalName": "Diglett",
@@ -601,6 +608,13 @@
         "imagePath": "/borpas/115.webp",
         "artist": "Jayvrekk#4961"
     },
+    "118": {
+        "number": "118",
+        "originalName": "Goldeen",
+        "name": "Goldpeen",
+        "imagePath": "/borpas/118.webp",
+        "artist": "Johnny7171#7585"
+    },
     "120": {
         "number": "120",
         "originalName": "Staryu",
@@ -705,6 +719,13 @@
         "name": "Borpeon",
         "imagePath": "/borpas/135.webp",
         "artist": "HazardDan#0013"
+    },
+    "136": {
+        "number": "136",
+        "originalName": "Flareon",
+        "name": "Florpeon",
+        "imagePath": "/borpas/136.webp",
+        "artist": "Beeched_Whale#3864"
     },
     "138": {
         "number": "138",
@@ -832,12 +853,26 @@
         "imagePath": "/borpas/159.webp",
         "artist": "booty#6434"
     },
+    "169": {
+        "number": "169",
+        "originalName": "Crobat",
+        "name": "Cumbat",
+        "imagePath": "/borpas/169.webp",
+        "artist": "carmaniac959#7751"
+    },
     "170": {
         "number": "170",
         "originalName": "Chinchou",
         "name": "Cumchou",
         "imagePath": "/borpas/170.webp",
         "artist": "plebbot#2834"
+    },
+    "174": {
+        "number": "174",
+        "originalName": "Igglybuff",
+        "name": "Igglycum",
+        "imagePath": "/borpas/174.webp",
+        "artist": "DoggoLua#8671"
     },
     "175": {
         "number": "175",
@@ -1217,6 +1252,13 @@
         "imagePath": "/borpas/330.webp",
         "artist": "Neku#4544"
     },
+    "333": {
+        "number": "333",
+        "originalName": "Swablu",
+        "name": "Swaborpu",
+        "imagePath": "/borpas/333.webp",
+        "artist": "moon2COFFEE#3173"
+    },
     "335": {
         "number": "335",
         "originalName": "Zangoose",
@@ -1594,6 +1636,20 @@
         "name": "Pre-molga",
         "imagePath": "/borpas/587.webp",
         "artist": "Plastik#6761"
+    },
+    "589": {
+        "number": "589",
+        "originalName": "Escavalier",
+        "name": "Escumalier",
+        "imagePath": "/borpas/589.webp",
+        "artist": "Beeched_whale#3864"
+    },
+    "598": {
+        "number": "598",
+        "originalName": "Ferrothorn",
+        "name": "Ferroborp",
+        "imagePath": "/borpas/598.webp",
+        "artist": "he#7139"
     },
     "609": {
         "number": "609",
