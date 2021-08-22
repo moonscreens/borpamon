@@ -587,6 +587,13 @@
         "imagePath": "/borpas/103.webp",
         "artist": "keylax#1859"
     },
+    "107": {
+        "number": "107",
+        "originalName": "Hitmonchan",
+        "name": "Borpmonchan",
+        "imagePath": "/borpas/107.webp",
+        "artist": "djs#5056"
+    },
     "109": {
         "number": "109",
         "originalName": "Koffing",
@@ -1040,6 +1047,13 @@
         "originalName": "Torchic",
         "name": "Borpchic",
         "imagePath": "/borpas/255.webp",
+        "artist": "Mudkip#8008"
+    },
+    "256": {
+        "number": "256",
+        "originalName": "Combusken",
+        "name": "Cumbustken",
+        "imagePath": "/borpas/256.webp",
         "artist": "Mudkip#8008"
     },
     "258": {
