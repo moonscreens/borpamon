@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode=production",
     "start": "npx webpack serve",
-    "update": "node get-borpamon.js && sharp --input ./borpas/*.png -o ./borpas -f webp -q 80"
+    "update": "node get-borpamon.js && sharp --input ./borpas/*.png -o ./borpas -f webp -q 50"
   },
   "repository": {
     "type": "git",
