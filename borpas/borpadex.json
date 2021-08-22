@@ -615,6 +615,13 @@
         "imagePath": "/borpas/118.webp",
         "artist": "Johnny7171#7585"
     },
+    "119": {
+        "number": "119",
+        "originalName": "Seaking",
+        "name": "Cumking",
+        "imagePath": "/borpas/119.webp",
+        "artist": "Johnny7171#7585"
+    },
     "120": {
         "number": "120",
         "originalName": "Staryu",
@@ -1259,6 +1266,13 @@
         "imagePath": "/borpas/333.webp",
         "artist": "moon2COFFEE#3173"
     },
+    "334": {
+        "number": "334",
+        "originalName": "Altaria",
+        "name": "Altorpia",
+        "imagePath": "/borpas/334.webp",
+        "artist": "moon2COFFEE#3173"
+    },
     "335": {
         "number": "335",
         "originalName": "Zangoose",
@@ -1510,6 +1524,20 @@
         "name": "Borbite",
         "imagePath": "/borpas/444.webp",
         "artist": "Ayyzaz#9591"
+    },
+    "447": {
+        "number": "447",
+        "originalName": "Riolu",
+        "name": "Riolewd",
+        "imagePath": "/borpas/447.webp",
+        "artist": "Pyrus#5966"
+    },
+    "448": {
+        "number": "448",
+        "originalName": "Lucario",
+        "name": "Lewdcario",
+        "imagePath": "/borpas/448.webp",
+        "artist": "Pyrus#5966"
     },
     "453": {
         "number": "453",
@@ -1819,6 +1847,13 @@
         "imagePath": "/borpas/799.webp",
         "artist": "Chodeodile#5555"
     },
+    "831": {
+        "number": "831",
+        "originalName": "Wooloo",
+        "name": "Woolorpa",
+        "imagePath": "/borpas/831.webp",
+        "artist": "Adam#1905"
+    },
     "845": {
         "number": "845",
         "originalName": "Cramorant",
@@ -1832,6 +1867,13 @@
         "name": "Borpakuda ",
         "imagePath": "/borpas/846.webp",
         "artist": "Jacob#4381, Krankit#1984"
+    },
+    "862": {
+        "number": "862",
+        "originalName": "Obstagoon",
+        "name": "Obstacoom",
+        "imagePath": "/borpas/862.webp",
+        "artist": "DoggoLua#8671"
     },
     "863": {
         "number": "863",
@@ -2267,6 +2309,13 @@
         "imagePath": "/borpas/152b.webp",
         "artist": "Zackyboi#0189"
     },
+    "174b": {
+        "number": "174b",
+        "originalName": "Shiny Igglybuff",
+        "name": "Shiny Igglycum",
+        "imagePath": "/borpas/174b.webp",
+        "artist": "DoggoLua#8671"
+    },
     "194a": {
         "number": "194a",
         "originalName": "Wooper",
@@ -2427,6 +2476,34 @@
         "name": "Cumstrodon",
         "imagePath": "/borpas/423d.webp",
         "artist": "Pyrus#5966"
+    },
+    "474a": {
+        "number": "474a",
+        "originalName": "Porygon-Z",
+        "name": "Borpagon-Z",
+        "imagePath": "/borpas/474a.webp",
+        "artist": "mannydiller#9009"
+    },
+    "474b": {
+        "number": "474b",
+        "originalName": "Porygon-Z",
+        "name": "Shiny Borpagon-Z (snacking on yogurt)",
+        "imagePath": "/borpas/474b.webp",
+        "artist": "mannydiller#9009"
+    },
+    "479b": {
+        "number": "479b",
+        "originalName": "Shiny Rotom",
+        "name": "Shiny Bortom",
+        "imagePath": "/borpas/479b.webp",
+        "artist": "DoggoLua#8671"
+    },
+    "862b": {
+        "number": "862b",
+        "originalName": "Shiny Obstagoon",
+        "name": "Shiny Obstacoom",
+        "imagePath": "/borpas/862b.webp",
+        "artist": "DoggoLua#8671"
     },
     "890e": {
         "number": "890e",
