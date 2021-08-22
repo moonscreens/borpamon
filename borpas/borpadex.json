@@ -419,6 +419,13 @@
         "imagePath": "/borpas/71.webp",
         "artist": "mannydiller#9009"
     },
+    "73": {
+        "number": "73",
+        "originalName": "Tentacruel",
+        "name": "Borpacruel",
+        "imagePath": "/borpas/73.webp",
+        "artist": "Beeched_whale#3864"
+    },
     "76": {
         "number": "76",
         "originalName": "Golem",
@@ -607,6 +614,13 @@
         "name": "Peezing",
         "imagePath": "/borpas/110.webp",
         "artist": "Beeched_Whale#3864"
+    },
+    "112": {
+        "number": "112",
+        "originalName": "Rhydon",
+        "name": "Cumdon",
+        "imagePath": "/borpas/112.webp",
+        "artist": "Pyrus#5966"
     },
     "113": {
         "number": "113",
@@ -986,6 +1000,13 @@
         "imagePath": "/borpas/218.webp",
         "artist": "Beeched_whale#3864"
     },
+    "222": {
+        "number": "222",
+        "originalName": "Corsola",
+        "name": "Coomsola",
+        "imagePath": "/borpas/222.webp",
+        "artist": "plebbot#2834"
+    },
     "235": {
         "number": "235",
         "originalName": "Smeargle",
@@ -1052,7 +1073,7 @@
     "256": {
         "number": "256",
         "originalName": "Combusken",
-        "name": "Cumbustken",
+        "name": "Cumbusten",
         "imagePath": "/borpas/256.webp",
         "artist": "Mudkip#8008"
     },
@@ -1069,13 +1090,6 @@
         "name": "Cumple",
         "imagePath": "/borpas/265.webp",
         "artist": "plebbot#2834"
-    },
-    "266": {
-        "number": "266",
-        "originalName": "Silcoon",
-        "name": "Silcoom",
-        "imagePath": "/borpas/266.webp",
-        "artist": "[MG] [MHG] [BG] REFERSON#1008"
     },
     "270": {
         "number": "270",
@@ -1497,6 +1511,13 @@
         "imagePath": "/borpas/403.webp",
         "artist": "L0plw4#6969"
     },
+    "406": {
+        "number": "406",
+        "originalName": "Budew",
+        "name": "Borpdew",
+        "imagePath": "/borpas/406.webp",
+        "artist": "plebbot#2834"
+    },
     "415": {
         "number": "415",
         "originalName": "Combee",
@@ -1551,6 +1572,13 @@
         "originalName": "Gabite",
         "name": "Borbite",
         "imagePath": "/borpas/444.webp",
+        "artist": "Ayyzaz#9591"
+    },
+    "445": {
+        "number": "445",
+        "originalName": "Garchomp",
+        "name": "Borchomp",
+        "imagePath": "/borpas/445.webp",
         "artist": "Ayyzaz#9591"
     },
     "447": {
@@ -1678,6 +1706,13 @@
         "name": "Borple",
         "imagePath": "/borpas/558.webp",
         "artist": "Zackyboi#0189\r"
+    },
+    "559": {
+        "number": "559",
+        "originalName": "Scraggy",
+        "name": "Borpaggy",
+        "imagePath": "/borpas/559.webp",
+        "artist": "Pyrus#5966"
     },
     "563": {
         "number": "563",
@@ -1854,6 +1889,13 @@
         "imagePath": "/borpas/772.webp",
         "artist": "Toona#9999"
     },
+    "775": {
+        "number": "775",
+        "originalName": "Komala",
+        "name": "Coomala",
+        "imagePath": "/borpas/775.webp",
+        "artist": "showshank#2112"
+    },
     "778": {
         "number": "778",
         "originalName": "Mimikyu",
@@ -1888,6 +1930,13 @@
         "name": "Woolorpa",
         "imagePath": "/borpas/831.webp",
         "artist": "Adam#1905"
+    },
+    "835": {
+        "number": "835",
+        "originalName": "Yamper",
+        "name": "Yampborp",
+        "imagePath": "/borpas/835.webp",
+        "artist": "Ayyzaz#9591"
     },
     "840": {
         "number": "840",
@@ -2434,6 +2483,27 @@
         "name": "Zigzacoom",
         "imagePath": "/borpas/263b.webp",
         "artist": "OutsideDaBox#0455"
+    },
+    "266a": {
+        "number": "266a",
+        "originalName": "Silcoon",
+        "name": "Silcoom",
+        "imagePath": "/borpas/266a.webp",
+        "artist": "[MG] [MHG] [BG] REFERSON#1008"
+    },
+    "266b": {
+        "number": "266b",
+        "originalName": "Silcoon",
+        "name": "Silcoom",
+        "imagePath": "/borpas/266b.webp",
+        "artist": "showshank#2112"
+    },
+    "266c": {
+        "number": "266c",
+        "originalName": "Silcoon",
+        "name": "Silcoom",
+        "imagePath": "/borpas/266c.webp",
+        "artist": "showshank#2112"
     },
     "302b": {
         "number": "302b",
