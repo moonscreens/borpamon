@@ -109,7 +109,7 @@ fetch('https://sheets.googleapis.com/v4/spreadsheets/1rEePpILD6k5x8oY9_QIutsxYS8
                     number: element[0],
                     originalName: element[1],
                     name: element[2],
-                    imagePath: imagePath,
+                    imagePath: imagePath.replace('.png', '.webp'),
                     artist: element[5],
                 }
             }

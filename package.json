@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode=production",
     "start": "npx webpack serve",
-    "update": "node --max-old-space-size=8192 get-borpamon.js"
+    "update": "node get-borpamon.js && sharp --input ./borpas/*.png -o ./borpas -f webp -q 80"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.2",
     "node-fetch": "^2.6.1",
+    "sharp-cli": "^1.15.0",
     "style-loader": "^3.1.0",
     "three": "^0.130.1",
     "twitch-chat-emotes": "^0.2.1",
