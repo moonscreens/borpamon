@@ -375,7 +375,7 @@ ChatInstance.on("emotes", (emotes) => {
     group.position.y = 0;
     group.dateSpawned = Date.now();
 
-    const direction = (Math.random() * Math.PI / 2) + Math.PI / 4;
+    const direction = (Math.random() * Math.PI *0.4) + Math.PI * 0.3;
     group.velocity = new THREE.Vector3(Math.sin(direction), Math.cos(direction, 0));
     group.velocity.multiplyScalar(1.5);
 
