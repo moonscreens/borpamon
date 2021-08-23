@@ -63,7 +63,6 @@ const shinyMaterial = new THREE.SpriteMaterial({
     transparent: true,
     color: 0xffffff,
     //blending: THREE.AdditiveBlending,
-    opacity: 0.9,
 });
 const shinyThingy = new THREE.Sprite(shinyMaterial);
 shinyThingy.scale.setScalar(15);
