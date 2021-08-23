@@ -344,7 +344,7 @@ function draw() {
         const p2 = Math.min(1, (Date.now() - lastBorpaTime) / (transitionInDuration / 3));
         borpa.rotation.z = (1 - (1 - p2) * (1 - p2)) * Math.PI * 4;
 
-        if (Date.now() - lastQuestionMark > 250 && p2 !== 1) {
+        if (Date.now() - lastQuestionMark > 500 && p2 !== 1) {
             spawnQuestionMark();
             lastQuestionMark = Date.now();
         }
