@@ -99,7 +99,7 @@ for (let i = 0; i < 30; i++) {
     //line.rotation.x = Math.random() * Math.PI;
     line.rotation.y = (Math.random() - 0.5) * Math.PI / 3;
     line.rotation.z = Math.random() * Math.PI * 2;
-    line.speed = Math.random() * 0.15 + 0.05;
+    line.speed = Math.random() * 0.1 + 0.01;
     if (Math.random() > 0.5) line.speed *= -1;
     lines.push(line);
     scene.add(line);
