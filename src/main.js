@@ -118,6 +118,44 @@ borpa.position.x = -3;
 borpa.scale.setScalar(4);
 scene.add(borpa);
 
+const drawFancyText = (text, y = 0, ctx, canvas) => {
+    // draw the letters one at a time to avoid the stroke overlapping
+    let width = 0;
+    for (let i = 0; i < text.length; i++) {
+        const letter = text[i];
+        width += ctx.measureText(letter).width;
+    }
+
+    let x = canvas.width / 2 - width / 2;
+    const letterArray = new Array(text.length);
+    for (let i = 0; i < text.length; i++) {
+        const letter = text[i];
+        letterArray[i] = {letter, x};
+        x += ctx.measureText(letter).width;
+    }
+
+    //const shuffledText = letterArray.sort(() => Math.random() - 0.5);
+
+    // sort vowels to be last
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+    const shuffledText = letterArray.reverse().sort((a, b) => {
+        if (vowels.includes(a.letter) && vowels.includes(b.letter)) {
+            return 0;
+        } else if (vowels.includes(a.letter)) {
+            return 1;
+        } else if (vowels.includes(b.letter)) {
+            return -1;
+        } else {
+            return 0;
+        }
+    });
+
+    for (let i = 0; i < shuffledText.length; i++) {
+        const letter = shuffledText[i];
+        ctx.fillText(letter.letter, letter.x, y);
+        ctx.strokeText(letter.letter, letter.x, y);
+    }
+}
 const borpaNumberCanvas = document.createElement('canvas');
 borpaNumberCanvas.width = 1024;
 borpaNumberCanvas.height = 1024;
@@ -184,13 +222,14 @@ function changeBorpa() {
     borpaNameCtx.clearRect(0, 0, 1024, 1024);
     borpaNameCtx.fillStyle = '#FBC816';
     const fontSize = 58;
-    borpaNameCtx.lineWidth = fontSize/15;
-    borpaNumberCtx.lineWidth = fontSize/15;
+    borpaNameCtx.lineWidth = fontSize / 15;
+    borpaNumberCtx.lineWidth = fontSize / 15;
 
     borpaNameCtx.font = fontSize + 'px ' + fancyFont;
     borpaNameCtx.textAlign = 'center';
-    borpaNameCtx.fillText(borpadex[borpaKeys[borpaIndex]].name, borpaNameCanvas.width / 2, fontSize);
-    borpaNameCtx.strokeText(borpadex[borpaKeys[borpaIndex]].name, borpaNameCanvas.width / 2, fontSize);
+    //borpaNameCtx.fillText(borpadex[borpaKeys[borpaIndex]].name, borpaNameCanvas.width / 2, fontSize);
+    //borpaNameCtx.strokeText(borpadex[borpaKeys[borpaIndex]].name, borpaNameCanvas.width / 2, fontSize);
+    drawFancyText(borpadex[borpaKeys[borpaIndex]].name, fontSize, borpaNameCtx, borpaNameCanvas);
     borpaNameCtx.font = fontSize * 0.5 + 'px ' + defaultFont;
     borpaNameCtx.fillStyle = '#000000';
     borpaNameCtx.fillText('Made by ' + borpadex[borpaKeys[borpaIndex]].artist, borpaNameCanvas.width / 2, fontSize * 2);
@@ -202,8 +241,9 @@ function changeBorpa() {
     borpaNumberCtx.fillStyle = '#FBC816';
     borpaNumberCtx.font = fontSize + 'px ' + fancyFont;
     borpaNumberCtx.textAlign = 'center';
-    borpaNumberCtx.fillText(`#${withLeadingZeros(borpaKeys[borpaIndex], 4)}`, borpaNumberCanvas.width / 2, borpaNumberCanvas.height - fontSize);
-    borpaNumberCtx.strokeText(`#${withLeadingZeros(borpaKeys[borpaIndex], 4)}`, borpaNumberCanvas.width / 2, borpaNumberCanvas.height - fontSize);
+    //borpaNumberCtx.fillText(`#${withLeadingZeros(borpaKeys[borpaIndex], 4)}`, borpaNumberCanvas.width / 2, borpaNumberCanvas.height - fontSize);
+    //borpaNumberCtx.strokeText(`#${withLeadingZeros(borpaKeys[borpaIndex], 4)}`, borpaNumberCanvas.width / 2, borpaNumberCanvas.height - fontSize);
+    drawFancyText(`#${withLeadingZeros(borpaKeys[borpaIndex], 4)}`, borpaNumberCanvas.height - fontSize, borpaNumberCtx, borpaNumberCanvas);
     borpaNumberCtx.font = (fontSize / 2) + 'px ' + defaultFont;
     borpaNumberCtx.fillStyle = '#000000';
     borpaNumberCtx.fillText(`${borpadex[borpaKeys[borpaIndex]].originalName}`, borpaNumberCanvas.width / 2, borpaNumberCanvas.height - fontSize * 2);
