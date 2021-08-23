@@ -46,7 +46,7 @@ function resize() {
 resize();
 window.addEventListener('resize', resize);
 
-scene.background = new THREE.Color(0x36393F);
+scene.background = new THREE.Color(0xD7130E);
 
 import frame1Src from './1.png';
 import frame2Src from './2.png';
@@ -82,9 +82,9 @@ setInterval(() => {
 
 // the fun lines in the background
 const lines = [];
-const lineGeometry = new THREE.PlaneBufferGeometry(300, 1);
+const lineGeometry = new THREE.PlaneBufferGeometry(400, 1);
 const lineSpawningRange = 1;
-for (let i = 0; i < 30; i++) {
+for (let i = 0; i < 20; i++) {
     const line = new THREE.Mesh(lineGeometry, new THREE.MeshBasicMaterial({
         color: 0xFFFFFF,
         transparent: true,
@@ -94,7 +94,7 @@ for (let i = 0; i < 30; i++) {
     }));
     line.scale.y = Math.random() * 3;
     line.position.x = (Math.random() * 2 - 1) * lineSpawningRange + 45;
-    line.position.y = (Math.random() * 2 - 1) * lineSpawningRange + 30 * (Math.random() > 0.5 ? -1 : 1);
+    line.position.y = (Math.random() * 2 - 1) * lineSpawningRange - 30;
     line.position.z = -40;
     //line.rotation.x = Math.random() * Math.PI;
     line.rotation.y = (Math.random() - 0.5) * Math.PI / 3;
@@ -276,7 +276,7 @@ function changeBorpa() {
         drawFancyText(wrappedText[i], fontSize + fontSize * i, borpaNameCtx, borpaNameCanvas);
     }
     borpaNameCtx.font = fontSize * 0.5 + 'px ' + defaultFont;
-    borpaNameCtx.fillStyle = '#FFFFFF';
+    borpaNameCtx.fillStyle = '#000000';
     borpaNameCtx.fillText('Made by ' + borpadex[borpaKeys[borpaIndex]].artist, borpaNameCanvas.width / 2, fontSize * (wrappedText.length + 1));
     borpaName.material.needsUpdate = true;
     borpaNameTexture.needsUpdate = true;
@@ -290,7 +290,7 @@ function changeBorpa() {
     //borpaNumberCtx.strokeText(`#${withLeadingZeros(borpaKeys[borpaIndex], 4)}`, borpaNumberCanvas.width / 2, borpaNumberCanvas.height - fontSize);
     drawFancyText(`#${withLeadingZeros(borpaKeys[borpaIndex], 4)}`, borpaNumberCanvas.height - fontSize, borpaNumberCtx, borpaNumberCanvas);
     borpaNumberCtx.font = (fontSize / 2) + 'px ' + defaultFont;
-    borpaNumberCtx.fillStyle = '#FFFFFF';
+    borpaNumberCtx.fillStyle = '#000000';
     borpaNumberCtx.fillText(`${borpadex[borpaKeys[borpaIndex]].originalName}`, borpaNumberCanvas.width / 2, borpaNumberCanvas.height - fontSize * 2);
     borpaNumber.material.needsUpdate = true;
     borpaNumberTexture.needsUpdate = true;
@@ -430,15 +430,15 @@ const emoteArray = [];
 ChatInstance.on("emotes", (emotes) => {
     const group = new THREE.Group();
 
-    group.position.x = -5;
-    group.position.y = 0;
+    group.position.x = 9;
+    group.position.y = -5.5;
     group.dateSpawned = Date.now();
 
-    const direction = (Math.random() * Math.PI * 0.4) + Math.PI * 0.3;
+    const direction = (Math.PI * 1.25) + (Math.random() * Math.PI * 0.4) + Math.PI * 0.3;
     group.velocity = new THREE.Vector3(Math.sin(direction), Math.cos(direction, 0));
     group.velocity.multiplyScalar(1.5);
 
-    group.rotation.z = -direction + Math.PI / 2;
+    group.rotation.z = -direction - Math.PI / 2;
 
     group.scale.setScalar(0.5);
 
