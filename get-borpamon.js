@@ -89,17 +89,17 @@ const downloadFile = (async (url, path) => {
 
 const borpadex = {};
 let count = 0;
-fetch('https://sheets.googleapis.com/v4/spreadsheets/1rEePpILD6k5x8oY9_QIutsxYS8qcmn2E9u2fDhS9HgI/values/!A:F?key=' + process.env.GOOGLE_API_KEY)
+fetch('https://sheets.googleapis.com/v4/spreadsheets/1rEePpILD6k5x8oY9_QIutsxYS8qcmn2E9u2fDhS9HgI/values/\'BORPA\'!A:F?key=' + process.env.GOOGLE_API_KEY)
     .then(res => res.json())
     .then(json => {
         for (let index = 2; index < json.values.length; index++) {
             const element = json.values[index];
-            if (element.length >= 4 && element[4] && element[4].toLowerCase().includes('http')) {
+            if (element.length >= 4 && element[3] && element[3].toLowerCase().includes('http')) {
                 count++;
                 const imagePath = `/borpas/${element[0]}.png`;
                 if (!fs.existsSync(`${__dirname}${imagePath}`)) {
                     setTimeout(() => {
-                        downloadFile((element[4] && element[4] !=="") ? element[4] : element[3], `${__dirname}${imagePath}`);
+                        downloadFile(element[3], `${__dirname}${imagePath}`);
                     }, 125 * count);
                 }
                 if (borpadex[element[0]] !== undefined) {
@@ -110,7 +110,7 @@ fetch('https://sheets.googleapis.com/v4/spreadsheets/1rEePpILD6k5x8oY9_QIutsxYS8
                     originalName: element[1],
                     name: element[2],
                     imagePath: imagePath.replace('.png', '.webp'),
-                    artist: element[5],
+                    artist: element[4],
                 }
             }
         }
