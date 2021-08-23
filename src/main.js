@@ -208,6 +208,15 @@ borpaNumber.position.y = (textSpriteSize / 2 + 2);
 borpaNumber.position.z = 2.001;
 borpaNumber.scale.setScalar(textSpriteSize);
 
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+}
+
 const borpadex = {};
 let borpaKeys = [];
 let borpaIndex = -1;
@@ -225,7 +234,7 @@ fetch('./borpas/borpadex.json')
         }
         borpaKeys = Object.keys(borpadex);
         //shuffle borpaKeys
-        borpaKeys = borpaKeys.sort(() => Math.random() - 0.5);
+        shuffleArray(borpaKeys);
 
         changeBorpa();
     });
