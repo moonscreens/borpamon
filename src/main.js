@@ -388,7 +388,7 @@ function draw() {
         }
     }
 
-    const questionMarkLife = 5000;
+    const questionMarkLife = 3500;
     const questionMarkTransition = 500;
     for (let index = questionMarks.length - 1; index >= 0; index--) {
         const element = questionMarks[index];
