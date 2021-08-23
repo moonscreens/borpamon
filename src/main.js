@@ -46,7 +46,7 @@ function resize() {
 resize();
 window.addEventListener('resize', resize);
 
-scene.background = new THREE.Color(0xD7130E);
+scene.background = new THREE.Color(0x36393F);
 
 import frame1Src from './1.png';
 import frame2Src from './2.png';
