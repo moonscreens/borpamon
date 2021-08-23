@@ -979,6 +979,13 @@
         "imagePath": "/borpas/170.webp",
         "artist": "plebbot#2834"
     },
+    "172": {
+        "number": "172",
+        "originalName": "Pichu",
+        "name": "Borpchu",
+        "imagePath": "/borpas/172.webp",
+        "artist": "showshank#2112"
+    },
     "174": {
         "number": "174",
         "originalName": "Igglybuff",
@@ -999,6 +1006,13 @@
         "name": "Borpu",
         "imagePath": "/borpas/177.webp",
         "artist": "Beeched_whale#3864"
+    },
+    "178": {
+        "number": "178",
+        "originalName": "Xatu",
+        "name": "BorpXatu",
+        "imagePath": "/borpas/178.webp",
+        "artist": "mannydiller#9009"
     },
     "179": {
         "number": "179",
@@ -1104,6 +1118,13 @@
         "name": "Cumsparce",
         "imagePath": "/borpas/206.webp",
         "artist": "DaYellaJ#1857"
+    },
+    "211": {
+        "number": "211",
+        "originalName": "Qwilfish",
+        "name": "Veggiefish",
+        "imagePath": "/borpas/211.webp",
+        "artist": "showshank#2112"
     },
     "213": {
         "number": "213",
@@ -1334,6 +1355,13 @@
         "originalName": "Seedot",
         "name": "Cumdot",
         "imagePath": "/borpas/273.webp",
+        "artist": "Neku#4544"
+    },
+    "274": {
+        "number": "274",
+        "originalName": "Nuzleaf",
+        "name": "Nutleaf",
+        "imagePath": "/borpas/274.webp",
         "artist": "Neku#4544"
     },
     "278": {
@@ -1770,6 +1798,13 @@
         "imagePath": "/borpas/393.webp",
         "artist": "Beeched_whale#3864"
     },
+    "396": {
+        "number": "396",
+        "originalName": "Starly",
+        "name": "Starpa",
+        "imagePath": "/borpas/396.webp",
+        "artist": "Mudkip#8008"
+    },
     "399": {
         "number": "399",
         "originalName": "Bidoof",
@@ -1791,12 +1826,26 @@
         "imagePath": "/borpas/403.webp",
         "artist": "L0plw4#6969"
     },
+    "405": {
+        "number": "405",
+        "originalName": "Luxray",
+        "name": "Spunxray",
+        "imagePath": "/borpas/405.webp",
+        "artist": "AFrostyAndFries#0819"
+    },
     "406": {
         "number": "406",
         "originalName": "Budew",
         "name": "Borpdew",
         "imagePath": "/borpas/406.webp",
         "artist": "plebbot#2834"
+    },
+    "412": {
+        "number": "412",
+        "originalName": "Burmy (Leaf)",
+        "name": "Burmpa",
+        "imagePath": "/borpas/412.webp",
+        "artist": "Zoocher#7642"
     },
     "415": {
         "number": "415",
@@ -1945,6 +1994,13 @@
         "imagePath": "/borpas/479.webp",
         "artist": "DoggoLua#8671"
     },
+    "484": {
+        "number": "484",
+        "originalName": "Palkia",
+        "name": "Borpia",
+        "imagePath": "/borpas/484.webp",
+        "artist": "DrWilly#1337"
+    },
     "487": {
         "number": "487",
         "originalName": "Giratina",
@@ -2042,6 +2098,13 @@
         "name": "Borpafty",
         "imagePath": "/borpas/560.webp",
         "artist": "Pyrus#5966"
+    },
+    "562": {
+        "number": "562",
+        "originalName": "Yamask",
+        "name": "Borpamask",
+        "imagePath": "/borpas/562.webp",
+        "artist": "VernalEquinox#5513"
     },
     "563": {
         "number": "563",
@@ -2403,7 +2466,7 @@
     "890": {
         "number": "890",
         "originalName": "Eternatus",
-        "name": "Eternatorpa",
+        "name": "Eternatcum",
         "imagePath": "/borpas/890.webp",
         "artist": "Larrel#8603"
     },
@@ -3184,6 +3247,13 @@
         "imagePath": "/borpas/554b.webp",
         "artist": "avatoh#9616 "
     },
+    "746s": {
+        "number": "746s",
+        "originalName": "Wishiwashi (School Form)",
+        "name": "Borpibarpshi",
+        "imagePath": "/borpas/746s.webp",
+        "artist": "Brodizzle#2716"
+    },
     "846b": {
         "number": "846b",
         "originalName": "Shiny Arrokuda",
@@ -3201,7 +3271,7 @@
     "890e": {
         "number": "890e",
         "originalName": "Eternamax Eternatus",
-        "name": "Coomax Eternatorpa",
+        "name": "Coomax Eternatcum",
         "imagePath": "/borpas/890e.webp",
         "artist": "Larrel#8603"
     },
