@@ -89,6 +89,7 @@ const downloadFile = (async (url, path) => {
 
 const borpadex = {};
 let count = 0;
+let downloadCount = 0;
 fetch('https://sheets.googleapis.com/v4/spreadsheets/1rEePpILD6k5x8oY9_QIutsxYS8qcmn2E9u2fDhS9HgI/values/\'BORPA\'!A:F?key=' + process.env.GOOGLE_API_KEY)
     .then(res => res.json())
     .then(json => {
@@ -98,9 +99,10 @@ fetch('https://sheets.googleapis.com/v4/spreadsheets/1rEePpILD6k5x8oY9_QIutsxYS8
                 count++;
                 const imagePath = `/borpas/${element[0]}.png`;
                 if (!fs.existsSync(`${__dirname}${imagePath}`)) {
+                    downloadCount++;
                     setTimeout(() => {
                         downloadFile(element[3], `${__dirname}${imagePath}`);
-                    }, 125 * count);
+                    }, 125 * downloadCount);
                 }
                 if (borpadex[element[0]] !== undefined) {
                     console.log(`${element[0]} already exists`);
