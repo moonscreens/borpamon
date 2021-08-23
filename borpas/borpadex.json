@@ -930,6 +930,13 @@
         "imagePath": "/borpas/159.webp",
         "artist": "booty#6434"
     },
+    "161": {
+        "number": "161",
+        "originalName": "Sentret",
+        "name": "Borptret",
+        "imagePath": "/borpas/161.webp",
+        "artist": "showshank#2112"
+    },
     "162": {
         "number": "162",
         "originalName": "Furret",
@@ -2225,6 +2232,13 @@
         "imagePath": "/borpas/742.webp",
         "artist": "VernalEquinox#5513"
     },
+    "746": {
+        "number": "746",
+        "originalName": "Wishiwashi",
+        "name": "Borpibarpshi",
+        "imagePath": "/borpas/746.webp",
+        "artist": "Brodizzle#2716"
+    },
     "761": {
         "number": "761",
         "originalName": "Bounsweet",
@@ -3036,6 +3050,13 @@
         "name": "Cumdum(Shiny)",
         "imagePath": "/borpas/374b.webp",
         "artist": "Mark0#0713"
+    },
+    "377b": {
+        "number": "377b",
+        "originalName": "Regirock",
+        "name": "Borpirock",
+        "imagePath": "/borpas/377b.webp",
+        "artist": "iraqlobster01#2536"
     },
     "384a": {
         "number": "384a",
