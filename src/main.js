@@ -137,12 +137,17 @@ const getWrappedText = (ctx, text, maxWidth) => {
     return lines;
 }
 
+const getLetterWidth = (ctx, letter) => {
+    const metrics = ctx.measureText(letter);
+    return metrics.actualBoundingBoxLeft + metrics.actualBoundingBoxRight;
+}
+
 const drawFancyText = (text, y = 0, ctx, canvas) => {
     // draw the letters one at a time to avoid the stroke overlapping
     let width = 0;
     for (let i = 0; i < text.length; i++) {
         const letter = text[i];
-        width += ctx.measureText(letter).width;
+        width += getLetterWidth(ctx, letter);
     }
 
     let x = canvas.width / 2 - width / 2;
@@ -150,7 +155,7 @@ const drawFancyText = (text, y = 0, ctx, canvas) => {
     for (let i = 0; i < text.length; i++) {
         const letter = text[i];
         letterArray[i] = { letter, x };
-        x += ctx.measureText(letter).width;
+        x += getLetterWidth(ctx, letter);
     }
 
     //const shuffledText = letterArray.sort(() => Math.random() - 0.5);
