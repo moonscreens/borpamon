@@ -1287,6 +1287,13 @@
         "imagePath": "/borpas/266.webp",
         "artist": "[MG] [MHG] [BG] REFERSON#1008"
     },
+    "268": {
+        "number": "268",
+        "originalName": "Cascoon",
+        "name": "Cascoom",
+        "imagePath": "/borpas/268.webp",
+        "artist": "showshank#2112"
+    },
     "269": {
         "number": "269",
         "originalName": "Dustox",
@@ -1374,7 +1381,7 @@
     "288": {
         "number": "288",
         "originalName": "Vigoroth",
-        "name": "Vigorcum",
+        "name": "Vigorcum (baking a cake (messy))",
         "imagePath": "/borpas/288.webp",
         "artist": "Comfybot#7448"
     },
