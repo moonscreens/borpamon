@@ -139,7 +139,7 @@ const getWrappedText = (ctx, text, maxWidth) => {
 
 const getLetterWidth = (ctx, letter) => {
     const metrics = ctx.measureText(letter);
-    return metrics.actualBoundingBoxLeft + metrics.actualBoundingBoxRight;
+    return metrics.width; //metrics.actualBoundingBoxLeft + metrics.actualBoundingBoxRight;
 }
 
 const drawFancyText = (text, y = 0, ctx, canvas) => {
