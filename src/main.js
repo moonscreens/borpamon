@@ -258,11 +258,8 @@ function changeBorpa() {
     borpaNameCtx.textAlign = 'center';
     //borpaNameCtx.fillText(borpadex[borpaKeys[borpaIndex]].name, borpaNameCanvas.width / 2, fontSize);
     //borpaNameCtx.strokeText(borpadex[borpaKeys[borpaIndex]].name, borpaNameCanvas.width / 2, fontSize);
-    console.log(borpadex[borpaKeys[borpaIndex]].name);
     const wrappedText = getWrappedText(borpaNameCtx, borpadex[borpaKeys[borpaIndex]].name, borpaNameCanvas.width * 0.9);
-    console.log(wrappedText);
     for (let i = 0; i < wrappedText.length; i++) {
-        console.log(wrappedText[i]);
         drawFancyText(wrappedText[i], fontSize + fontSize * i, borpaNameCtx, borpaNameCanvas);
     }
     borpaNameCtx.font = fontSize * 0.5 + 'px ' + defaultFont;
@@ -290,11 +287,32 @@ function changeBorpa() {
     borpaNumberCtx.fillRect(0,0,1024, 1024);*/
 }
 
+import questionMarkURL from './question-mark.png';
+const questionMarkMat = new THREE.MeshBasicMaterial({
+    map: new THREE.TextureLoader().load(questionMarkURL),
+    transparent: true,
+});
+const questionMarkGeom = new THREE.PlaneBufferGeometry(1, 1);
+const spawnQuestionMark = () => {
+    const questionMark = new THREE.Mesh(questionMarkGeom, questionMarkMat);
+    questionMark.position.x = -3;
+    questionMark.position.z = 1.1;
+    questionMark.scale.setScalar(1);
+    const dir = Math.random() * Math.PI * 2;
+    questionMark.velocity = new THREE.Vector3(Math.sin(dir), Math.cos(dir), Math.random() * 2 - 1);
+    scene.add(questionMark);
+    questionMarks.push(questionMark);
+    questionMark.spawnTime = Date.now();
+}
+const questionMarks = [];
+
 
 let lastBorpaTime = Date.now();
 const borpaDuration = 12000;
 const transitionInDuration = 5500;
 const transitionOutDuration = 500;
+
+let lastQuestionMark = Date.now();
 
 let lastFrame = Date.now();
 // Called once per frame
@@ -310,6 +328,7 @@ function draw() {
     }
 
     if (Date.now() - lastBorpaTime < transitionInDuration) {
+
         const p = (Date.now() - lastBorpaTime) / transitionInDuration;
         borpa.material.opacity = p;
         borpa.material.color = new THREE.Color(0x000000);
@@ -319,6 +338,11 @@ function draw() {
         //stop rotating sooner in the transition
         const p2 = Math.min(1, (Date.now() - lastBorpaTime) / (transitionInDuration / 3));
         borpa.rotation.z = (1 - (1 - p2) * (1 - p2)) * Math.PI * 4;
+
+        if (Date.now() - lastQuestionMark > 250 && p2 !== 1) {
+            spawnQuestionMark();
+            lastQuestionMark = Date.now();
+        }
 
     } else if (Date.now() - lastBorpaTime > borpaDuration - transitionOutDuration) {
         const p = (borpaDuration - (Date.now() - lastBorpaTime)) / transitionOutDuration;
@@ -359,6 +383,28 @@ function draw() {
         }
     }
 
+    const questionMarkLife = 5000;
+    const questionMarkTransition = 500;
+    for (let index = questionMarks.length - 1; index >= 0; index--) {
+        const element = questionMarks[index];
+
+        if (Date.now() - element.spawnTime < questionMarkTransition) {
+            let p = Math.min(1, (Date.now() - element.spawnTime) / questionMarkTransition);
+            element.scale.setScalar(p);
+        } else if (Date.now() - element.spawnTime > questionMarkLife - questionMarkTransition) {
+            let p = (questionMarkLife - (Date.now() - element.spawnTime)) / questionMarkTransition;
+            element.scale.setScalar(p);
+        }
+
+        element.position.x += element.velocity.x * delta;
+        element.position.y += element.velocity.y * delta;
+        element.rotation.z += element.velocity.z * delta;
+        if (element.spawnTime < Date.now() - questionMarkLife) {
+            scene.remove(element);
+            questionMarks.splice(index, 1);
+        }
+    }
+
     renderer.render(scene, camera);
 
     lastFrame = Date.now();
@@ -375,7 +421,7 @@ ChatInstance.on("emotes", (emotes) => {
     group.position.y = 0;
     group.dateSpawned = Date.now();
 
-    const direction = (Math.random() * Math.PI *0.4) + Math.PI * 0.3;
+    const direction = (Math.random() * Math.PI * 0.4) + Math.PI * 0.3;
     group.velocity = new THREE.Vector3(Math.sin(direction), Math.cos(direction, 0));
     group.velocity.multiplyScalar(1.5);
 
