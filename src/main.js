@@ -118,6 +118,25 @@ borpa.position.x = -3;
 borpa.scale.setScalar(4);
 scene.add(borpa);
 
+const getWrappedText = (ctx, text, maxWidth) => {
+    var words = text.split(" ");
+    var lines = [];
+    var currentLine = words[0];
+
+    for (var i = 1; i < words.length; i++) {
+        var word = words[i];
+        var width = ctx.measureText(currentLine + " " + word).width;
+        if (width < maxWidth) {
+            currentLine += " " + word;
+        } else {
+            lines.push(currentLine);
+            currentLine = word;
+        }
+    }
+    lines.push(currentLine);
+    return lines;
+}
+
 const drawFancyText = (text, y = 0, ctx, canvas) => {
     // draw the letters one at a time to avoid the stroke overlapping
     let width = 0;
@@ -130,7 +149,7 @@ const drawFancyText = (text, y = 0, ctx, canvas) => {
     const letterArray = new Array(text.length);
     for (let i = 0; i < text.length; i++) {
         const letter = text[i];
-        letterArray[i] = {letter, x};
+        letterArray[i] = { letter, x };
         x += ctx.measureText(letter).width;
     }
 
@@ -239,10 +258,16 @@ function changeBorpa() {
     borpaNameCtx.textAlign = 'center';
     //borpaNameCtx.fillText(borpadex[borpaKeys[borpaIndex]].name, borpaNameCanvas.width / 2, fontSize);
     //borpaNameCtx.strokeText(borpadex[borpaKeys[borpaIndex]].name, borpaNameCanvas.width / 2, fontSize);
-    drawFancyText(borpadex[borpaKeys[borpaIndex]].name, fontSize, borpaNameCtx, borpaNameCanvas);
+    console.log(borpadex[borpaKeys[borpaIndex]].name);
+    const wrappedText = getWrappedText(borpaNameCtx, borpadex[borpaKeys[borpaIndex]].name, borpaNameCanvas.width);
+    console.log(wrappedText);
+    for (let i = 0; i < wrappedText.length; i++) {
+        console.log(wrappedText[i]);
+        drawFancyText(wrappedText[i], fontSize + fontSize * i, borpaNameCtx, borpaNameCanvas);
+    }
     borpaNameCtx.font = fontSize * 0.5 + 'px ' + defaultFont;
     borpaNameCtx.fillStyle = '#000000';
-    borpaNameCtx.fillText('Made by ' + borpadex[borpaKeys[borpaIndex]].artist, borpaNameCanvas.width / 2, fontSize * 2);
+    borpaNameCtx.fillText('Made by ' + borpadex[borpaKeys[borpaIndex]].artist, borpaNameCanvas.width / 2, fontSize * (wrappedText.length + 1));
     borpaName.material.needsUpdate = true;
     borpaNameTexture.needsUpdate = true;
 
