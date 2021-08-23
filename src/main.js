@@ -259,7 +259,7 @@ function changeBorpa() {
     //borpaNameCtx.fillText(borpadex[borpaKeys[borpaIndex]].name, borpaNameCanvas.width / 2, fontSize);
     //borpaNameCtx.strokeText(borpadex[borpaKeys[borpaIndex]].name, borpaNameCanvas.width / 2, fontSize);
     console.log(borpadex[borpaKeys[borpaIndex]].name);
-    const wrappedText = getWrappedText(borpaNameCtx, borpadex[borpaKeys[borpaIndex]].name, borpaNameCanvas.width);
+    const wrappedText = getWrappedText(borpaNameCtx, borpadex[borpaKeys[borpaIndex]].name, borpaNameCanvas.width * 0.9);
     console.log(wrappedText);
     for (let i = 0; i < wrappedText.length; i++) {
         console.log(wrappedText[i]);
