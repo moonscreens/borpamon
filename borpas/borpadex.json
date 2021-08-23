@@ -2358,6 +2358,13 @@
         "imagePath": "/borpas/799.webp",
         "artist": "Chodeodile#5555"
     },
+    "805": {
+        "number": "805",
+        "originalName": "Stakataka",
+        "name": "Cumstaka",
+        "imagePath": "/borpas/805.webp",
+        "artist": "Brodizzle#2716"
+    },
     "816": {
         "number": "816",
         "originalName": "Sobble",
@@ -2417,7 +2424,7 @@
     "854": {
         "number": "854",
         "originalName": "Sinistea",
-        "name": "Cumistea",
+        "name": "Cumistea (it's milk tea)",
         "imagePath": "/borpas/854.webp",
         "artist": "Brodizzle#2716"
     },
