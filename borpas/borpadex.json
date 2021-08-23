@@ -1322,6 +1322,13 @@
         "imagePath": "/borpas/272.webp",
         "artist": "Mark0#0713"
     },
+    "273": {
+        "number": "273",
+        "originalName": "Seedot",
+        "name": "Cumdot",
+        "imagePath": "/borpas/273.webp",
+        "artist": "Neku#4544"
+    },
     "278": {
         "number": "278",
         "originalName": "Wingull",
@@ -1381,7 +1388,7 @@
     "288": {
         "number": "288",
         "originalName": "Vigoroth",
-        "name": "Vigorcum (baking a cake (messy))",
+        "name": "Vigorcum (baking a cake)",
         "imagePath": "/borpas/288.webp",
         "artist": "Comfybot#7448"
     },
@@ -1503,6 +1510,13 @@
         "name": "Cumel",
         "imagePath": "/borpas/322.webp",
         "artist": "plebbot#2834"
+    },
+    "323": {
+        "number": "323",
+        "originalName": "Camerupt",
+        "name": "Cumerupt (dispensing yogurt)",
+        "imagePath": "/borpas/323.webp",
+        "artist": "showshank#2112"
     },
     "324": {
         "number": "324",
