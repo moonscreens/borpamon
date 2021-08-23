@@ -207,10 +207,20 @@ fetch('./borpas/borpadex.json')
     });
 
 function withLeadingZeros(str, length) {
-    while (str.length < length) {
-        str = '0' + str;
+    let numbers = "";
+    let letters = "";
+    for (let index = 0; index < str.length; index++) {
+        // check if str[index] is a number
+        if (!isNaN(str[index])) {
+            numbers += str[index];
+        } else {
+            letters += str[index];
+        }
     }
-    return str;
+    while (numbers.length < length) {
+        numbers = '0' + numbers;
+    }
+    return numbers + letters;
 }
 
 function changeBorpa() {
