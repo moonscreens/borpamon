@@ -292,8 +292,9 @@ function changeBorpa() {
 
 
 let lastBorpaTime = Date.now();
-const borpaDuration = 10000;
-const transitionDuration = 1000;
+const borpaDuration = 12000;
+const transitionInDuration = 5000;
+const transitionOutDuration = 1000;
 
 let lastFrame = Date.now();
 // Called once per frame
@@ -308,14 +309,27 @@ function draw() {
         lastBorpaTime = Date.now();
     }
 
-    if (Date.now() - lastBorpaTime < transitionDuration) {
-        const p = (Date.now() - lastBorpaTime) / transitionDuration;
-        borpa.rotation.z = (1 - (1 - p) * (1 - p)) * Math.PI * 10;
-    } else if (Date.now() - lastBorpaTime > borpaDuration - transitionDuration) {
-        const p = (borpaDuration - (Date.now() - lastBorpaTime)) / transitionDuration;
-        borpa.rotation.z = (1 - (1 - p) * (1 - p)) * Math.PI * 10;
+    if (Date.now() - lastBorpaTime < transitionInDuration) {
+        const p = (Date.now() - lastBorpaTime) / transitionInDuration;
+        borpa.material.opacity = p;
+        borpa.material.color = new THREE.Color(0x000000);
+        borpaName.material.opacity = 0;
+        borpaNumber.material.opacity = 0;
+
+        //stop rotating halfway through the transition
+        const p2 = Math.min(1, (Date.now() - lastBorpaTime) / (transitionInDuration / 2));
+        borpa.rotation.z = (1 - (1 - p2) * (1 - p2)) * Math.PI * 10;
+
+    } else if (Date.now() - lastBorpaTime > borpaDuration - transitionOutDuration) {
+        const p = (borpaDuration - (Date.now() - lastBorpaTime)) / transitionOutDuration;
+        borpa.rotation.z = (1 - (1 - p) * (1 - p)) * Math.PI * -10;
+        borpa.material.opacity = p;
     } else {
-        borpa.rotation.z = Math.sin(Date.now() / 10000) * 0.25;
+        borpaName.material.opacity = 1;
+        borpaNumber.material.opacity = 1;
+        borpa.material.opacity = 1;
+        borpa.material.color = new THREE.Color(0xFFFFFF);
+        borpa.rotation.z = 0;//Math.sin(Date.now() / 10000) * 0.25;
     }
 
     // update materials for animated emotes
