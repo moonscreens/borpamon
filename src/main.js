@@ -217,7 +217,7 @@ function changeBorpa() {
 
 
 let lastBorpaTime = Date.now();
-const borpaDuration = 20000;
+const borpaDuration = 10000;
 const transitionDuration = 1000;
 
 let lastFrame = Date.now();
