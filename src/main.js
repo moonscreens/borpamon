@@ -84,7 +84,7 @@ setInterval(() => {
 const lines = [];
 const lineGeometry = new THREE.PlaneBufferGeometry(400, 1);
 const lineSpawningRange = 0;
-for (let i = 0; i < 40; i++) {
+for (let i = 0; i < 50; i++) {
     const line = new THREE.Mesh(lineGeometry, new THREE.MeshBasicMaterial({
         color: 0xFFFFFF,
         transparent: true,
