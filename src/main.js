@@ -318,11 +318,11 @@ function draw() {
 
         //stop rotating sooner in the transition
         const p2 = Math.min(1, (Date.now() - lastBorpaTime) / (transitionInDuration / 3));
-        borpa.rotation.z = (1 - (1 - p2) * (1 - p2)) * Math.PI * 5;
+        borpa.rotation.z = (1 - (1 - p2) * (1 - p2)) * Math.PI * 4;
 
     } else if (Date.now() - lastBorpaTime > borpaDuration - transitionOutDuration) {
         const p = (borpaDuration - (Date.now() - lastBorpaTime)) / transitionOutDuration;
-        borpa.rotation.z = (1 - (1 - p) * (1 - p)) * Math.PI * -5;
+        borpa.rotation.z = (1 - (1 - p) * (1 - p)) * Math.PI * -4;
         borpa.material.opacity = p;
     } else {
         borpaName.material.opacity = 1;
