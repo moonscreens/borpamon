@@ -277,7 +277,7 @@ function changeBorpa() {
         drawFancyText(wrappedText[i], fontSize + fontSize * i, borpaNameCtx, borpaNameCanvas);
     }
     borpaNameCtx.font = fontSize * 0.5 + 'px ' + defaultFont;
-    borpaNameCtx.fillStyle = '#000000';
+    borpaNameCtx.fillStyle = '#FFFFFF';
     borpaNameCtx.fillText('Made by ' + borpadex[borpaKeys[borpaIndex]].artist, borpaNameCanvas.width / 2, fontSize * (wrappedText.length + 1));
     borpaName.material.needsUpdate = true;
     borpaNameTexture.needsUpdate = true;
@@ -291,7 +291,7 @@ function changeBorpa() {
     //borpaNumberCtx.strokeText(`#${withLeadingZeros(borpaKeys[borpaIndex], 4)}`, borpaNumberCanvas.width / 2, borpaNumberCanvas.height - fontSize);
     drawFancyText(`#${withLeadingZeros(borpaKeys[borpaIndex], 4)}`, borpaNumberCanvas.height - fontSize, borpaNumberCtx, borpaNumberCanvas);
     borpaNumberCtx.font = (fontSize / 2) + 'px ' + defaultFont;
-    borpaNumberCtx.fillStyle = '#000000';
+    borpaNumberCtx.fillStyle = '#FFFFFF';
     borpaNumberCtx.fillText(`${borpadex[borpaKeys[borpaIndex]].originalName}`, borpaNumberCanvas.width / 2, borpaNumberCanvas.height - fontSize * 2);
     borpaNumber.material.needsUpdate = true;
     borpaNumberTexture.needsUpdate = true;
