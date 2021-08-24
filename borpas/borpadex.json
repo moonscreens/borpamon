@@ -648,14 +648,14 @@
         "originalName": "Koffing",
         "name": "Kumming",
         "imagePath": "/borpas/109.webp",
-        "artist": "Beeched_Whale#3864"
+        "artist": "Beeched_whale#3864"
     },
     "110": {
         "number": "110",
         "originalName": "Weezing",
         "name": "Peezing",
         "imagePath": "/borpas/110.webp",
-        "artist": "Beeched_Whale#3864"
+        "artist": "Beeched_whale#3864"
     },
     "111": {
         "number": "111",
@@ -739,21 +739,21 @@
         "originalName": "Magmar",
         "name": "Cumgar",
         "imagePath": "/borpas/126.webp",
-        "artist": "Beeched_Whale#3864"
+        "artist": "Beeched_whale#3864"
     },
     "127": {
         "number": "127",
         "originalName": "Pinsir",
         "name": "Borpsir",
         "imagePath": "/borpas/127.webp",
-        "artist": "Beeched_Whale#3864"
+        "artist": "Beeched_whale#3864"
     },
     "128": {
         "number": "128",
         "originalName": "Tauros",
         "name": "Bouros",
         "imagePath": "/borpas/128.webp",
-        "artist": "Beeched_Whale#3864"
+        "artist": "Beeched_whale#3864"
     },
     "129": {
         "number": "129",
@@ -809,7 +809,7 @@
         "originalName": "Flareon",
         "name": "Florpeon",
         "imagePath": "/borpas/136.webp",
-        "artist": "Beeched_Whale#3864"
+        "artist": "Beeched_whale#3864"
     },
     "138": {
         "number": "138",
@@ -837,14 +837,14 @@
         "originalName": "Kabutops",
         "name": "Borputops",
         "imagePath": "/borpas/141.webp",
-        "artist": "Beeched_Whale#3864"
+        "artist": "Beeched_whale#3864"
     },
     "142": {
         "number": "142",
         "originalName": "Aerodactyl",
         "name": "Borpodactyl",
         "imagePath": "/borpas/142.webp",
-        "artist": "Beeched_Whale#3864"
+        "artist": "Beeched_whale#3864"
     },
     "144": {
         "number": "144",
@@ -886,28 +886,28 @@
         "originalName": "Mew",
         "name": "Borp",
         "imagePath": "/borpas/151.webp",
-        "artist": "Beeched_Whale#3864"
+        "artist": "Beeched_whale#3864"
     },
     "152": {
         "number": "152",
         "originalName": "Chikorita",
         "name": "Cumorita",
         "imagePath": "/borpas/152.webp",
-        "artist": "Beeched_Whale#3864"
+        "artist": "Beeched_whale#3864"
     },
     "153": {
         "number": "153",
         "originalName": "Bayleef",
         "name": "Cumleef",
         "imagePath": "/borpas/153.webp",
-        "artist": "Beeched_Whale#3864"
+        "artist": "Beeched_whale#3864"
     },
     "154": {
         "number": "154",
         "originalName": "Meganium",
         "name": "Megacumium",
         "imagePath": "/borpas/154.webp",
-        "artist": "Beeched_Whale#3864"
+        "artist": "Beeched_whale#3864"
     },
     "155": {
         "number": "155",
@@ -1300,6 +1300,13 @@
         "name": "Borpatine",
         "imagePath": "/borpas/226.webp",
         "artist": "Pyrus#5966"
+    },
+    "227": {
+        "number": "227",
+        "originalName": "Skarmory",
+        "name": "Armored Flying Cum Bird",
+        "imagePath": "/borpas/227.webp",
+        "artist": "Beeched_whale#3864"
     },
     "228": {
         "number": "228",
@@ -2228,7 +2235,7 @@
     "488": {
         "number": "488",
         "originalName": "Cresselia",
-        "name": "Coomelia",
+        "name": "Coomelia (It's sour cream)",
         "imagePath": "/borpas/488.webp",
         "artist": "jazz#6776"
     },
@@ -3217,7 +3224,7 @@
         "originalName": "Mew",
         "name": "Borp (shiny)",
         "imagePath": "/borpas/151b.webp",
-        "artist": "Beeched_Whale#3864"
+        "artist": "Beeched_whale#3864"
     },
     "152b": {
         "number": "152b",
