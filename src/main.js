@@ -84,7 +84,7 @@ setInterval(() => {
 const lines = [];
 const lineGeometry = new THREE.PlaneBufferGeometry(400, 1);
 const lineSpawningRange = 0;
-for (let i = 0; i < 50; i++) {
+for (let i = 0; i < 60; i++) {
     const line = new THREE.Mesh(lineGeometry, new THREE.MeshBasicMaterial({
         color: 0xFFFFFF,
         transparent: true,
@@ -93,8 +93,8 @@ for (let i = 0; i < 50; i++) {
         side: THREE.DoubleSide,
     }));
     line.scale.y = Math.random() * 3;
-    line.position.x = (Math.random() * 2 - 1) * lineSpawningRange + 45;
-    line.position.y = (Math.random() * 2 - 1) * lineSpawningRange - 30;
+    line.position.x = (Math.random() * 2 - 1) * lineSpawningRange + 50;
+    line.position.y = (Math.random() * 2 - 1) * lineSpawningRange - 40;
     line.position.z = -40 + Math.random();
     //line.rotation.x = Math.random() * Math.PI;
     //line.rotation.y = (Math.random() - 0.5) * Math.PI / 3;
