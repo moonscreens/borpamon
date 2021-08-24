@@ -965,6 +965,13 @@
         "imagePath": "/borpas/165.webp",
         "artist": "Wiper#7232"
     },
+    "167": {
+        "number": "167",
+        "originalName": "Spinarak",
+        "name": "Borparak",
+        "imagePath": "/borpas/167.webp",
+        "artist": "mannydiller#9009"
+    },
     "169": {
         "number": "169",
         "originalName": "Crobat",
@@ -1299,13 +1306,6 @@
         "originalName": "Hitmontop",
         "name": "Borpamontop",
         "imagePath": "/borpas/237.webp",
-        "artist": "Ayyzaz#9591"
-    },
-    "241": {
-        "number": "241",
-        "originalName": "Miltank",
-        "name": "Coomtank",
-        "imagePath": "/borpas/241.webp",
         "artist": "Ayyzaz#9591"
     },
     "243": {
@@ -1755,13 +1755,6 @@
         "name": "Borpaform",
         "imagePath": "/borpas/351.webp",
         "artist": "Filithorn#6769"
-    },
-    "352": {
-        "number": "352",
-        "originalName": "Kecleon (Shiny)",
-        "name": "KEKleon (Shiny)",
-        "imagePath": "/borpas/352.webp",
-        "artist": "Mudkip#8008"
     },
     "353": {
         "number": "353",
@@ -3187,7 +3180,7 @@
     "241b": {
         "number": "241b",
         "originalName": "Miltank",
-        "name": "TBD",
+        "name": "Coomtank",
         "imagePath": "/borpas/241b.webp",
         "artist": "Ayyzaz#9591"
     },
@@ -3260,6 +3253,20 @@
         "name": "Solcock (Shiny)",
         "imagePath": "/borpas/338b.webp",
         "artist": "CptBrian#6969"
+    },
+    "352a": {
+        "number": "352a",
+        "originalName": "Kecleon",
+        "name": "KEKleon",
+        "imagePath": "/borpas/352a.webp",
+        "artist": "Mudkip#8008"
+    },
+    "352b": {
+        "number": "352b",
+        "originalName": "Kecleon (Shiny)",
+        "name": "KEKleon (Shiny)",
+        "imagePath": "/borpas/352b.webp",
+        "artist": "Mudkip#8008"
     },
     "370a": {
         "number": "370a",
