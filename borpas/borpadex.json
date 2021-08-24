@@ -1133,6 +1133,20 @@
         "imagePath": "/borpas/191.webp",
         "artist": "plebbot#2834"
     },
+    "193": {
+        "number": "193",
+        "originalName": "Yanma",
+        "name": "Ligma",
+        "imagePath": "/borpas/193.webp",
+        "artist": "avatoh#9616 "
+    },
+    "195": {
+        "number": "195",
+        "originalName": "Quagsire",
+        "name": "Quimsire",
+        "imagePath": "/borpas/195.webp",
+        "artist": "avatoh#9616 "
+    },
     "196": {
         "number": "196",
         "originalName": "Espeon",
@@ -1189,6 +1203,13 @@
         "imagePath": "/borpas/203.webp",
         "artist": "Zackyboi#0189"
     },
+    "204": {
+        "number": "204",
+        "originalName": "Pineco",
+        "name": "Peenco",
+        "imagePath": "/borpas/204.webp",
+        "artist": "avatoh#9616 "
+    },
     "205": {
         "number": "205",
         "originalName": "Forretress",
@@ -1244,6 +1265,13 @@
         "name": "Borpacross",
         "imagePath": "/borpas/214.webp",
         "artist": "ScottishPig#1342"
+    },
+    "215": {
+        "number": "215",
+        "originalName": "Sneasel",
+        "name": "Borpsel",
+        "imagePath": "/borpas/215.webp",
+        "artist": "plebbot#2834"
     },
     "218": {
         "number": "218",
@@ -1332,7 +1360,7 @@
     "231": {
         "number": "231",
         "originalName": "Phanpy",
-        "name": "Cumphy",
+        "name": "Cumphy (has a cold)",
         "imagePath": "/borpas/231.webp",
         "artist": "Ayyzaz#9591"
     },
@@ -1363,6 +1391,13 @@
         "name": "Borpamontop",
         "imagePath": "/borpas/237.webp",
         "artist": "Ayyzaz#9591"
+    },
+    "238": {
+        "number": "238",
+        "originalName": "Smoochum",
+        "name": "Smoocums",
+        "imagePath": "/borpas/238.webp",
+        "artist": "Comfybot#7448"
     },
     "243": {
         "number": "243",
@@ -1874,6 +1909,13 @@
         "name": "Borprein",
         "imagePath": "/borpas/365.webp",
         "artist": "Ayyzaz#9591"
+    },
+    "371": {
+        "number": "371",
+        "originalName": "Bagon",
+        "name": "Borpon",
+        "imagePath": "/borpas/371.webp",
+        "artist": "AGT#3766"
     },
     "373": {
         "number": "373",
