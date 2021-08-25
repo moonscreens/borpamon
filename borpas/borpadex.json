@@ -1826,13 +1826,6 @@
         "imagePath": "/borpas/306.webp",
         "artist": "AGT#3766"
     },
-    "307": {
-        "number": "307",
-        "originalName": "Meditite",
-        "name": "Medishite",
-        "imagePath": "/borpas/307.webp",
-        "artist": "CptBrian#6969"
-    },
     "308": {
         "number": "308",
         "originalName": "Medicham",
@@ -3770,13 +3763,6 @@
         "name": "Borpleye",
         "imagePath": "/borpas/302b.webp",
         "artist": "Vaidd#4387"
-    },
-    "307b": {
-        "number": "307b",
-        "originalName": "Meditite (Shiny)",
-        "name": "Medishite (Shiny)",
-        "imagePath": "/borpas/307b.webp",
-        "artist": "CptBrian#6969"
     },
     "308b": {
         "number": "308b",
