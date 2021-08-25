@@ -1238,6 +1238,13 @@
         "imagePath": "/borpas/207.webp",
         "artist": "Mudkip#8008"
     },
+    "208": {
+        "number": "208",
+        "originalName": "Steelix",
+        "name": "Stoolix",
+        "imagePath": "/borpas/208.webp",
+        "artist": "Ayyzaz#9591"
+    },
     "209": {
         "number": "209",
         "originalName": "Snubbull",
@@ -1278,6 +1285,20 @@
         "originalName": "Sneasel",
         "name": "Borpsel",
         "imagePath": "/borpas/215.webp",
+        "artist": "plebbot#2834"
+    },
+    "216": {
+        "number": "216",
+        "originalName": "Teddiursa",
+        "name": "Borpiursa",
+        "imagePath": "/borpas/216.webp",
+        "artist": "plebbot#2834"
+    },
+    "217": {
+        "number": "217",
+        "originalName": "Ursaring",
+        "name": "Borpsaring",
+        "imagePath": "/borpas/217.webp",
         "artist": "plebbot#2834"
     },
     "218": {
@@ -1406,6 +1427,13 @@
         "imagePath": "/borpas/238.webp",
         "artist": "Comfybot#7448"
     },
+    "239": {
+        "number": "239",
+        "originalName": "Elekid",
+        "name": "Elpkid",
+        "imagePath": "/borpas/239.webp",
+        "artist": "showshank#2112"
+    },
     "243": {
         "number": "243",
         "originalName": "Raikou",
@@ -1427,12 +1455,26 @@
         "imagePath": "/borpas/245.webp",
         "artist": "Mute#4688"
     },
+    "246": {
+        "number": "246",
+        "originalName": "Larvitar",
+        "name": "Larvicoom",
+        "imagePath": "/borpas/246.webp",
+        "artist": "Pyrus#5966"
+    },
     "247": {
         "number": "247",
         "originalName": "Pupitar",
         "name": "Pupicoom",
         "imagePath": "/borpas/247.webp",
         "artist": "Pyrus#5966"
+    },
+    "248": {
+        "number": "248",
+        "originalName": "Tyranitar",
+        "name": "Borpanitar",
+        "imagePath": "/borpas/248.webp",
+        "artist": "Luci#0420"
     },
     "249": {
         "number": "249",
@@ -1558,6 +1600,13 @@
         "originalName": "Nuzleaf",
         "name": "Nutleaf",
         "imagePath": "/borpas/274.webp",
+        "artist": "Neku#4544"
+    },
+    "275": {
+        "number": "275",
+        "originalName": "Shiftry",
+        "name": "Shittree",
+        "imagePath": "/borpas/275.webp",
         "artist": "Neku#4544"
     },
     "278": {
@@ -1882,6 +1931,13 @@
         "imagePath": "/borpas/355.webp",
         "artist": "DawnyGoi#4892"
     },
+    "356": {
+        "number": "356",
+        "originalName": "Dusclops",
+        "name": "Borpclops",
+        "imagePath": "/borpas/356.webp",
+        "artist": "VOID#2317"
+    },
     "359": {
         "number": "359",
         "originalName": "Absol",
@@ -1917,11 +1973,18 @@
         "imagePath": "/borpas/365.webp",
         "artist": "Ayyzaz#9591"
     },
-    "368": {
-        "number": "368",
-        "originalName": "Gorebyss",
-        "name": "Cumbyss (NOT sperm)",
-        "imagePath": "/borpas/368.webp",
+    "366": {
+        "number": "366",
+        "originalName": "Clamperl",
+        "name": "Cumperl",
+        "imagePath": "/borpas/366.webp",
+        "artist": "mannydiller#9009"
+    },
+    "367": {
+        "number": "367",
+        "originalName": "Huntail",
+        "name": "Cumtail",
+        "imagePath": "/borpas/367.webp",
         "artist": "mannydiller#9009"
     },
     "371": {
@@ -1929,6 +1992,13 @@
         "originalName": "Bagon",
         "name": "Borpon",
         "imagePath": "/borpas/371.webp",
+        "artist": "AGT#3766"
+    },
+    "372": {
+        "number": "372",
+        "originalName": "Shelgon",
+        "name": "Shelgorpa",
+        "imagePath": "/borpas/372.webp",
         "artist": "AGT#3766"
     },
     "373": {
@@ -2414,6 +2484,13 @@
         "imagePath": "/borpas/563.webp",
         "artist": "he#7139"
     },
+    "566": {
+        "number": "566",
+        "originalName": "Archen",
+        "name": "Borpen",
+        "imagePath": "/borpas/566.webp",
+        "artist": "moon2COFFEE#3173"
+    },
     "582": {
         "number": "582",
         "originalName": "Vanillite",
@@ -2713,6 +2790,13 @@
         "originalName": "Flapple",
         "name": "Fapple",
         "imagePath": "/borpas/841.webp",
+        "artist": "showshank#2112"
+    },
+    "842": {
+        "number": "842",
+        "originalName": "Appletun",
+        "name": "Fapplecum",
+        "imagePath": "/borpas/842.webp",
         "artist": "showshank#2112"
     },
     "845": {
@@ -3420,7 +3504,7 @@
         "originalName": "Celebi",
         "name": "Borpapi",
         "imagePath": "/borpas/251b.webp",
-        "artist": "Toona#9999 - recolored by urah#2427\n"
+        "artist": "Toona#9999 - recolored by urah#2427"
     },
     "257a": {
         "number": "257a",
@@ -3492,10 +3576,24 @@
         "imagePath": "/borpas/352b.webp",
         "artist": "Mudkip#8008"
     },
+    "368a": {
+        "number": "368a",
+        "originalName": "Gorebyss",
+        "name": "Cumbyss",
+        "imagePath": "/borpas/368a.webp",
+        "artist": "mannydiller#9009"
+    },
+    "368b": {
+        "number": "368b",
+        "originalName": "Gorebyss",
+        "name": "Shiny Cumbyss",
+        "imagePath": "/borpas/368b.webp",
+        "artist": "mannydiller#9009"
+    },
     "370a": {
         "number": "370a",
         "originalName": "Luvdisc",
-        "name": "Luvdics (it's a fish)",
+        "name": "Luvdics (fish blowing bubbles)",
         "imagePath": "/borpas/370a.webp",
         "artist": "CptBrian#6969"
     },
@@ -3666,6 +3764,20 @@
         "name": "Borucumka",
         "imagePath": "/borpas/554b.webp",
         "artist": "avatoh#9616 "
+    },
+    "586a": {
+        "number": "586a",
+        "originalName": "Sawsbuck",
+        "name": "Cumsbuck Spring Form",
+        "imagePath": "/borpas/586a.webp",
+        "artist": "IcyEspy#5116"
+    },
+    "586b": {
+        "number": "586b",
+        "originalName": "Sawsbuck",
+        "name": "Cumsbuck Summer Form\r",
+        "imagePath": "/borpas/586b.webp",
+        "artist": "IcyEspy#5116"
     },
     "746s": {
         "number": "746s",
