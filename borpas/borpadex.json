@@ -1714,6 +1714,13 @@
         "imagePath": "/borpas/281.webp",
         "artist": "Ayyzaz#9591"
     },
+    "282": {
+        "number": "282",
+        "originalName": "Gardevoir",
+        "name": "Gardevorpa",
+        "imagePath": "/borpas/282.webp",
+        "artist": "Ayyzaz#9591"
+    },
     "283": {
         "number": "283",
         "originalName": "Surskit",
@@ -1852,6 +1859,13 @@
         "originalName": "Electrike",
         "name": "Cumectrike",
         "imagePath": "/borpas/309.webp",
+        "artist": "plebbot#2834"
+    },
+    "310": {
+        "number": "310",
+        "originalName": "Manectric",
+        "name": "Cumectric",
+        "imagePath": "/borpas/310.webp",
         "artist": "plebbot#2834"
     },
     "311": {
@@ -2000,6 +2014,13 @@
         "name": "Borpoach",
         "imagePath": "/borpas/339.webp",
         "artist": "Filithorn#6769"
+    },
+    "340": {
+        "number": "340",
+        "originalName": "Whiscash",
+        "name": "Borpcash",
+        "imagePath": "/borpas/340.webp",
+        "artist": "plebbot#2834"
     },
     "341": {
         "number": "341",
