@@ -433,13 +433,6 @@
         "imagePath": "/borpas/69.webp",
         "artist": "DTK#6969"
     },
-    "70": {
-        "number": "70",
-        "originalName": "Weepinbell",
-        "name": "Borpinbell",
-        "imagePath": "/borpas/70.webp",
-        "artist": "Sleepyhead#1606\r"
-    },
     "71": {
         "number": "71",
         "originalName": "Victreebel",
@@ -604,7 +597,7 @@
     "100": {
         "number": "100",
         "originalName": "Voltorb",
-        "name": "Volborp",
+        "name": "Borporb",
         "imagePath": "/borpas/100.webp",
         "artist": "Ninjagnome66#6969"
     },
@@ -1784,6 +1777,13 @@
         "imagePath": "/borpas/294.webp",
         "artist": "showshank#2112"
     },
+    "295": {
+        "number": "295",
+        "originalName": "Exploud",
+        "name": "Cumloud",
+        "imagePath": "/borpas/295.webp",
+        "artist": "epicachilles#0262"
+    },
     "298": {
         "number": "298",
         "originalName": "Azurill",
@@ -1847,6 +1847,13 @@
         "imagePath": "/borpas/306.webp",
         "artist": "AGT#3766"
     },
+    "307": {
+        "number": "307",
+        "originalName": "Meditite",
+        "name": "Medishite",
+        "imagePath": "/borpas/307.webp",
+        "artist": "CptBrian#6969"
+    },
     "308": {
         "number": "308",
         "originalName": "Medicham",
@@ -1882,12 +1889,33 @@
         "imagePath": "/borpas/312.webp",
         "artist": "Gunthixkid#0048"
     },
+    "313": {
+        "number": "313",
+        "originalName": "Volbeat",
+        "name": "Volborp",
+        "imagePath": "/borpas/313.webp",
+        "artist": "AGT#3766"
+    },
+    "314": {
+        "number": "314",
+        "originalName": "Illumise",
+        "name": "Illumorp",
+        "imagePath": "/borpas/314.webp",
+        "artist": "AGT#3766"
+    },
     "316": {
         "number": "316",
         "originalName": "Gulpin",
         "name": "Borpin",
         "imagePath": "/borpas/316.webp",
         "artist": "Cey#2621\r"
+    },
+    "317": {
+        "number": "317",
+        "originalName": "Swalot",
+        "name": "Swalorpa",
+        "imagePath": "/borpas/317.webp",
+        "artist": "8311#8311"
     },
     "318": {
         "number": "318",
@@ -2043,6 +2071,13 @@
         "imagePath": "/borpas/343.webp",
         "artist": "Pyrus#5966"
     },
+    "344": {
+        "number": "344",
+        "originalName": "Claydol",
+        "name": "Coomdol",
+        "imagePath": "/borpas/344.webp",
+        "artist": "Comfybot#7448"
+    },
     "345": {
         "number": "345",
         "originalName": "Lileep",
@@ -2063,6 +2098,13 @@
         "name": "Borparith",
         "imagePath": "/borpas/347.webp",
         "artist": "Mudkip#8008"
+    },
+    "348": {
+        "number": "348",
+        "originalName": "Armaldo",
+        "name": "Borpaldo",
+        "imagePath": "/borpas/348.webp",
+        "artist": "DoggoLua#8671"
     },
     "349": {
         "number": "349",
@@ -2182,6 +2224,20 @@
         "name": "Cumtail",
         "imagePath": "/borpas/367.webp",
         "artist": "mannydiller#9009"
+    },
+    "369": {
+        "number": "369",
+        "originalName": "Relicanth",
+        "name": "Relicumth",
+        "imagePath": "/borpas/369.webp",
+        "artist": "Pyrus#5966"
+    },
+    "370": {
+        "number": "370",
+        "originalName": "Luvdisc",
+        "name": "Cumdisc",
+        "imagePath": "/borpas/370.webp",
+        "artist": "Beeched_whale#3864"
     },
     "371": {
         "number": "371",
@@ -2334,7 +2390,8 @@
         "number": "396",
         "originalName": "Starly",
         "name": "Starpa",
-        "imagePath": "/borpas/396.webp"
+        "imagePath": "/borpas/396.webp",
+        "artist": "Mudkip#8008"
     },
     "399": {
         "number": "399",
@@ -2426,6 +2483,13 @@
         "name": "Borpubi",
         "imagePath": "/borpas/420.webp",
         "artist": "DTK#6969"
+    },
+    "424": {
+        "number": "424",
+        "originalName": "Ambipom",
+        "name": "Ambicum",
+        "imagePath": "/borpas/424.webp",
+        "artist": "8311#8311"
     },
     "425": {
         "number": "425",
@@ -2651,6 +2715,20 @@
         "imagePath": "/borpas/515.webp",
         "artist": "plebbot#2834"
     },
+    "517": {
+        "number": "517",
+        "originalName": "Munna",
+        "name": "Cumna",
+        "imagePath": "/borpas/517.webp",
+        "artist": "plebbot#2834"
+    },
+    "518": {
+        "number": "518",
+        "originalName": "Musharna",
+        "name": "Cumsharna",
+        "imagePath": "/borpas/518.webp",
+        "artist": "plebbot#2834"
+    },
     "519": {
         "number": "519",
         "originalName": "Pidove",
@@ -2712,6 +2790,13 @@
         "originalName": "Archen",
         "name": "Borpen",
         "imagePath": "/borpas/566.webp",
+        "artist": "moon2COFFEE#3173"
+    },
+    "567": {
+        "number": "567",
+        "originalName": "Archeops",
+        "name": "Borpeops",
+        "imagePath": "/borpas/567.webp",
         "artist": "moon2COFFEE#3173"
     },
     "579": {
@@ -2825,6 +2910,13 @@
         "name": "Esburrpa",
         "imagePath": "/borpas/677.webp",
         "artist": "zugzugmine#5851"
+    },
+    "679": {
+        "number": "679",
+        "originalName": "Honedge",
+        "name": "Cumedge",
+        "imagePath": "/borpas/679.webp",
+        "artist": "ScottishPig#1342"
     },
     "685": {
         "number": "685",
@@ -3358,6 +3450,20 @@
         "imagePath": "/borpas/56b.webp",
         "artist": "ovio#0826"
     },
+    "70a": {
+        "number": "70a",
+        "originalName": "Weepinbell",
+        "name": "Borpinbell",
+        "imagePath": "/borpas/70a.webp",
+        "artist": "Sleepyhead#1606\r"
+    },
+    "70b": {
+        "number": "70b",
+        "originalName": "Weepinbell",
+        "name": "Borpinbell",
+        "imagePath": "/borpas/70b.webp",
+        "artist": "cock#5217\r"
+    },
     "72a": {
         "number": "72a",
         "originalName": "Tentacool",
@@ -3764,6 +3870,13 @@
         "imagePath": "/borpas/212b.webp",
         "artist": "mannydiller#9009"
     },
+    "240b": {
+        "number": "240b",
+        "originalName": "Magby",
+        "name": "Cumby",
+        "imagePath": "/borpas/240b.webp",
+        "artist": "Comfybot#7448"
+    },
     "241b": {
         "number": "241b",
         "originalName": "Miltank",
@@ -3827,12 +3940,26 @@
         "imagePath": "/borpas/302b.webp",
         "artist": "Vaidd#4387"
     },
+    "307b": {
+        "number": "307b",
+        "originalName": "Meditite (Shiny)",
+        "name": "Medishite (Shiny)",
+        "imagePath": "/borpas/307b.webp",
+        "artist": "CptBrian#6969"
+    },
     "308b": {
         "number": "308b",
         "originalName": "Medicham (Shiny)",
         "name": "Medicum (the droolbender) (Shiny)",
         "imagePath": "/borpas/308b.webp",
         "artist": "CptBrian#6969"
+    },
+    "317b": {
+        "number": "317b",
+        "originalName": "Swalot",
+        "name": "Swalorpa(shiny)",
+        "imagePath": "/borpas/317b.webp",
+        "artist": "8311#8311"
     },
     "337a": {
         "number": "337a",
@@ -3889,20 +4016,6 @@
         "name": "Shiny Cumbyss",
         "imagePath": "/borpas/368b.webp",
         "artist": "mannydiller#9009"
-    },
-    "370a": {
-        "number": "370a",
-        "originalName": "Luvdisc",
-        "name": "Luvdics (Fish blowing bubbles)",
-        "imagePath": "/borpas/370a.webp",
-        "artist": "CptBrian#6969"
-    },
-    "370b": {
-        "number": "370b",
-        "originalName": "Luvdisc",
-        "name": "Cumdisc",
-        "imagePath": "/borpas/370b.webp",
-        "artist": "Beeched_whale#3864"
     },
     "373b": {
         "number": "373b",
@@ -4008,13 +4121,6 @@
         "name": "Shiny Gastrocum (West)",
         "imagePath": "/borpas/423d.webp",
         "artist": "Pyrus#5966"
-    },
-    "424a": {
-        "number": "424a",
-        "originalName": "Ambipom",
-        "name": "Ambicum",
-        "imagePath": "/borpas/424a.webp",
-        "artist": "8311#8311"
     },
     "424b": {
         "number": "424b",
