@@ -86,8 +86,12 @@ const downloadFile = (async (url, path) => {
     console.log(`Downloaded ${path}`);
 });
 
+function removeLetters (string) {
+    return string.replace(/[^0-9]/g, '');
+}
 
 const borpadex = {};
+const borpanames = {};
 let count = 0;
 let downloadCount = 0;
 fetch('https://sheets.googleapis.com/v4/spreadsheets/1rEePpILD6k5x8oY9_QIutsxYS8qcmn2E9u2fDhS9HgI/values/\'BORPA\'!A:F?key=' + process.env.GOOGLE_API_KEY)
@@ -106,6 +110,11 @@ fetch('https://sheets.googleapis.com/v4/spreadsheets/1rEePpILD6k5x8oY9_QIutsxYS8
                 }
                 if (borpadex[element[0]] !== undefined) {
                     console.log(`${element[0]} already exists`);
+                }
+                if (borpanames[element[2]] !== undefined && removeLetters(element[0]) !== removeLetters(borpanames[element[2]])) {
+                    console.log(`${element[2]} already exists at ${element[0]} and ${borpanames[element[2]]}`);
+                } else {
+                    borpanames[element[2]] = element[0];
                 }
                 borpadex[element[0]] = {
                     number: element[0],
