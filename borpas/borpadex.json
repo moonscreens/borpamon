@@ -506,7 +506,7 @@
     "85": {
         "number": "85",
         "originalName": "Dodrio",
-        "name": "Borptrio",
+        "name": "Borpdrio",
         "imagePath": "/borpas/85.webp",
         "artist": "mannydiller#9009"
     },
@@ -2130,7 +2130,7 @@
     "353": {
         "number": "353",
         "originalName": "Shuppet",
-        "name": "Borppet",
+        "name": "Banorppa",
         "imagePath": "/borpas/353.webp",
         "artist": "AGT#3766"
     },
@@ -3229,28 +3229,28 @@
     "880": {
         "number": "880",
         "originalName": "Dracozolt",
-        "name": "",
+        "name": "Dracozorpa",
         "imagePath": "/borpas/880.webp",
         "artist": "Larrel#8603"
     },
     "881": {
         "number": "881",
         "originalName": "Arctozolt",
-        "name": "",
+        "name": "Arctozorpa",
         "imagePath": "/borpas/881.webp",
         "artist": "Larrel#8603"
     },
     "882": {
         "number": "882",
         "originalName": "Dracovish",
-        "name": "",
+        "name": "Dracovorpa",
         "imagePath": "/borpas/882.webp",
         "artist": "Larrel#8603"
     },
     "883": {
         "number": "883",
         "originalName": "Arctovish",
-        "name": "",
+        "name": "Artovorpaish",
         "imagePath": "/borpas/883.webp",
         "artist": "Larrel#8603"
     },
