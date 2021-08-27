@@ -4258,15 +4258,22 @@
     "586a": {
         "number": "586a",
         "originalName": "Sawsbuck",
-        "name": "Cumsbuck Spring Form",
+        "name": "Cumsbuck Spring",
         "imagePath": "/borpas/586a.webp",
         "artist": "IcyEspy#5116"
     },
     "586b": {
         "number": "586b",
         "originalName": "Sawsbuck",
-        "name": "Cumsbuck Summer Form\r",
+        "name": "Cumsbuck Summer",
         "imagePath": "/borpas/586b.webp",
+        "artist": "IcyEspy#5116"
+    },
+    "586c": {
+        "number": "586c",
+        "originalName": "Sawsbuck",
+        "name": "Cumsbuck Autumn",
+        "imagePath": "/borpas/586c.webp",
         "artist": "IcyEspy#5116"
     },
     "746s": {
