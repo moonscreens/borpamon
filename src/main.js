@@ -219,7 +219,7 @@ function shuffleArray(array) {
 const borpadex = {};
 let borpaKeys = [];
 let borpaIndex = -1;
-fetch('./borpas/borpadex.json')
+fetch('./borpas/borpadex.json?v='+Date.now())
     .then(res => res.json())
     .then(json => {
         for (const key in json) {
