@@ -1861,13 +1861,6 @@
         "imagePath": "/borpas/306.webp",
         "artist": "AGT#3766"
     },
-    "307": {
-        "number": "307",
-        "originalName": "Meditite",
-        "name": "Medishite",
-        "imagePath": "/borpas/307.webp",
-        "artist": "CptBrian#6969"
-    },
     "308": {
         "number": "308",
         "originalName": "Medicham",
@@ -2743,6 +2736,13 @@
         "imagePath": "/borpas/511.webp",
         "artist": "plebbot#2834"
     },
+    "512": {
+        "number": "512",
+        "originalName": "Simisage",
+        "name": "Coomisage",
+        "imagePath": "/borpas/512.webp",
+        "artist": "plebbot#2834"
+    },
     "513": {
         "number": "513",
         "originalName": "Pansear",
@@ -2750,11 +2750,25 @@
         "imagePath": "/borpas/513.webp",
         "artist": "plebbot#2834"
     },
+    "514": {
+        "number": "514",
+        "originalName": "Simisear",
+        "name": "Coomisear",
+        "imagePath": "/borpas/514.webp",
+        "artist": "plebbot#2834"
+    },
     "515": {
         "number": "515",
         "originalName": "Panpour",
         "name": "Cumpour",
         "imagePath": "/borpas/515.webp",
+        "artist": "plebbot#2834"
+    },
+    "516": {
+        "number": "516",
+        "originalName": "Simipour",
+        "name": "Coomipour",
+        "imagePath": "/borpas/516.webp",
         "artist": "plebbot#2834"
     },
     "517": {
@@ -2777,6 +2791,13 @@
         "name": "Cumdove",
         "imagePath": "/borpas/519.webp",
         "artist": "VernalEquinox#5513"
+    },
+    "529": {
+        "number": "529",
+        "originalName": "Drilbur",
+        "name": "Drilpa",
+        "imagePath": "/borpas/529.webp",
+        "artist": "mannydiller#9009"
     },
     "535": {
         "number": "535",
@@ -2896,6 +2917,13 @@
         "name": "Ferroborp",
         "imagePath": "/borpas/598.webp",
         "artist": "he#7139"
+    },
+    "607": {
+        "number": "607",
+        "originalName": "Litwick",
+        "name": "Cumwick",
+        "imagePath": "/borpas/607.webp",
+        "artist": "Trevor#0977"
     },
     "609": {
         "number": "609",
@@ -4009,13 +4037,6 @@
         "name": "Borpleye",
         "imagePath": "/borpas/302b.webp",
         "artist": "Vaidd#4387"
-    },
-    "307b": {
-        "number": "307b",
-        "originalName": "Meditite (Shiny)",
-        "name": "Medishite (Shiny)",
-        "imagePath": "/borpas/307b.webp",
-        "artist": "CptBrian#6969"
     },
     "308b": {
         "number": "308b",
