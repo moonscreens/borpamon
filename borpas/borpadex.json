@@ -1142,7 +1142,7 @@
     },
     "196": {
         "number": "196",
-        "originalName": "Espeon",
+        "originalName": "https://cdn.discordapp.com/attachments/878074061790515210/878514369942667285/Esborpeon.png",
         "name": "Esborpeon",
         "imagePath": "/borpas/196.webp",
         "artist": "IcyEspy#5116"
@@ -2498,6 +2498,13 @@
         "imagePath": "/borpas/406.webp",
         "artist": "plebbot#2834"
     },
+    "407": {
+        "number": "407",
+        "originalName": "Roserade",
+        "name": "Cumerade (freshly watered)",
+        "imagePath": "/borpas/407.webp",
+        "artist": "baker_belays#9503"
+    },
     "408": {
         "number": "408",
         "originalName": "Cranidos",
@@ -2687,13 +2694,6 @@
         "imagePath": "/borpas/448.webp",
         "artist": "Pyrus#5966"
     },
-    "450": {
-        "number": "450",
-        "originalName": "Hippowdon",
-        "name": "Hippowcoom",
-        "imagePath": "/borpas/450.webp",
-        "artist": "ovio#0826"
-    },
     "453": {
         "number": "453",
         "originalName": "Croagunk",
@@ -2714,6 +2714,13 @@
         "name": "Cumeon",
         "imagePath": "/borpas/456.webp",
         "artist": "VernalEquinox#5513"
+    },
+    "458": {
+        "number": "458",
+        "originalName": "Mantyke",
+        "name": "Borptyke",
+        "imagePath": "/borpas/458.webp",
+        "artist": "plebbot#2834"
     },
     "459": {
         "number": "459",
@@ -3323,6 +3330,13 @@
         "name": "Type: Borpa",
         "imagePath": "/borpas/772.webp",
         "artist": "Toona#9999"
+    },
+    "774": {
+        "number": "774",
+        "originalName": "Minior  ",
+        "name": "Cumnior(Meteor Form)",
+        "imagePath": "/borpas/774.webp",
+        "artist": "plebbot#2834"
     },
     "775": {
         "number": "775",
