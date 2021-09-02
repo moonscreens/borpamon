@@ -1142,7 +1142,7 @@
     },
     "196": {
         "number": "196",
-        "originalName": "https://cdn.discordapp.com/attachments/878074061790515210/878514369942667285/Esborpeon.png",
+        "originalName": "Espeon",
         "name": "Esborpeon",
         "imagePath": "/borpas/196.webp",
         "artist": "IcyEspy#5116"
@@ -1882,6 +1882,13 @@
         "imagePath": "/borpas/306.webp",
         "artist": "AGT#3766"
     },
+    "307": {
+        "number": "307",
+        "originalName": "Meditite",
+        "name": "Medishite",
+        "imagePath": "/borpas/307.webp",
+        "artist": "CptBrian#6969"
+    },
     "308": {
         "number": "308",
         "originalName": "Medicham",
@@ -2470,6 +2477,12 @@
         "imagePath": "/borpas/400.webp",
         "artist": "Ayyzaz#9591"
     },
+    "401": {
+        "number": "401",
+        "originalName": "Kricketot",
+        "name": "Borpetot",
+        "imagePath": "/borpas/401.webp"
+    },
     "403": {
         "number": "403",
         "originalName": "Shinx",
@@ -2526,6 +2539,13 @@
         "imagePath": "/borpas/410.webp",
         "artist": "plebbot#2834"
     },
+    "411": {
+        "number": "411",
+        "originalName": "Bastiodon",
+        "name": "Borpstiodon",
+        "imagePath": "/borpas/411.webp",
+        "artist": "plebbot#2834"
+    },
     "412": {
         "number": "412",
         "originalName": "Burmy (Leaf)",
@@ -2561,6 +2581,13 @@
         "imagePath": "/borpas/417.webp",
         "artist": "VernalEquinox#5513"
     },
+    "418": {
+        "number": "418",
+        "originalName": "Buizel",
+        "name": "Borpzel",
+        "imagePath": "/borpas/418.webp",
+        "artist": "VernalEquinox#5513"
+    },
     "419": {
         "number": "419",
         "originalName": "Floatzel",
@@ -2574,6 +2601,13 @@
         "name": "Borpubi",
         "imagePath": "/borpas/420.webp",
         "artist": "DTK#6969"
+    },
+    "421": {
+        "number": "421",
+        "originalName": "Cherrim",
+        "name": "Borprim (Cumshine Form)",
+        "imagePath": "/borpas/421.webp",
+        "artist": "Larrel#8603"
     },
     "424": {
         "number": "424",
@@ -2610,6 +2644,13 @@
         "imagePath": "/borpas/428.webp",
         "artist": "Floop#7897"
     },
+    "429": {
+        "number": "429",
+        "originalName": "Mismagius",
+        "name": "Miscumgius",
+        "imagePath": "/borpas/429.webp",
+        "artist": "plebbot#2834"
+    },
     "431": {
         "number": "431",
         "originalName": "Glameow",
@@ -2644,6 +2685,13 @@
         "name": "LeBronzor James",
         "imagePath": "/borpas/436.webp",
         "artist": "mannydiller#9009"
+    },
+    "440": {
+        "number": "440",
+        "originalName": "Happiny",
+        "name": "Borppiny",
+        "imagePath": "/borpas/440.webp",
+        "artist": "Larrel#8603"
     },
     "441": {
         "number": "441",
@@ -2763,6 +2811,20 @@
         "name": "Glorpceon",
         "imagePath": "/borpas/471.webp",
         "artist": "plebbot#2834"
+    },
+    "475": {
+        "number": "475",
+        "originalName": "Gallade",
+        "name": "Gallarpa",
+        "imagePath": "/borpas/475.webp",
+        "artist": "moon2COFFEE#3173"
+    },
+    "476": {
+        "number": "476",
+        "originalName": "Probopass",
+        "name": "Proborpass",
+        "imagePath": "/borpas/476.webp",
+        "artist": "Larrel#8603"
     },
     "479": {
         "number": "479",
@@ -3281,6 +3343,13 @@
         "name": "Borpiefly",
         "imagePath": "/borpas/742.webp",
         "artist": "VernalEquinox#5513"
+    },
+    "743": {
+        "number": "743",
+        "originalName": "Ribombee",
+        "name": "Riborpbee",
+        "imagePath": "/borpas/743.webp",
+        "artist": "Pixelcatz#8093"
     },
     "746": {
         "number": "746",
@@ -4254,6 +4323,13 @@
         "name": "Borpleye",
         "imagePath": "/borpas/302b.webp",
         "artist": "Vaidd#4387"
+    },
+    "307b": {
+        "number": "307b",
+        "originalName": "Meditite (Shiny)",
+        "name": "Medishite (Shiny)",
+        "imagePath": "/borpas/307b.webp",
+        "artist": "CptBrian#6969"
     },
     "308b": {
         "number": "308b",
