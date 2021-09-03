@@ -2652,6 +2652,13 @@
         "imagePath": "/borpas/429.webp",
         "artist": "plebbot#2834"
     },
+    "430": {
+        "number": "430",
+        "originalName": "Honchkrow",
+        "name": "Honchkum",
+        "imagePath": "/borpas/430.webp",
+        "artist": "laine#3110"
+    },
     "431": {
         "number": "431",
         "originalName": "Glameow",
@@ -2820,6 +2827,13 @@
         "imagePath": "/borpas/467.webp",
         "artist": "Beeched_whale#3864"
     },
+    "468": {
+        "number": "468",
+        "originalName": "Togekiss",
+        "name": "Borpakiss",
+        "imagePath": "/borpas/468.webp",
+        "artist": "laine#3110"
+    },
     "470": {
         "number": "470",
         "originalName": "Leafeon",
@@ -2833,6 +2847,13 @@
         "name": "Glorpceon",
         "imagePath": "/borpas/471.webp",
         "artist": "plebbot#2834"
+    },
+    "473": {
+        "number": "473",
+        "originalName": "Mamoswine",
+        "name": "Mamosworpa",
+        "imagePath": "/borpas/473.webp",
+        "artist": "laine#3110"
     },
     "475": {
         "number": "475",
