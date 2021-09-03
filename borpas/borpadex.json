@@ -2743,6 +2743,27 @@
         "imagePath": "/borpas/448.webp",
         "artist": "Pyrus#5966"
     },
+    "450": {
+        "number": "450",
+        "originalName": "Hippowdon",
+        "name": "Hippowcoom",
+        "imagePath": "/borpas/450.webp",
+        "artist": "ovio#0826"
+    },
+    "451": {
+        "number": "451",
+        "originalName": "Skorupi",
+        "name": "Skorpa",
+        "imagePath": "/borpas/451.webp",
+        "artist": "moon2COFFEE#3173"
+    },
+    "452": {
+        "number": "452",
+        "originalName": "Drapion",
+        "name": "Draborpion",
+        "imagePath": "/borpas/452.webp",
+        "artist": "moon2COFFEE#3173"
+    },
     "453": {
         "number": "453",
         "originalName": "Croagunk",
@@ -3351,6 +3372,13 @@
         "name": "Riborpbee",
         "imagePath": "/borpas/743.webp",
         "artist": "Pixelcatz#8093"
+    },
+    "744": {
+        "number": "744",
+        "originalName": "Rockruff",
+        "name": "Borpruff",
+        "imagePath": "/borpas/744.webp",
+        "artist": "plebbot#2834"
     },
     "746": {
         "number": "746",
