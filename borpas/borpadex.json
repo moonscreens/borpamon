@@ -2414,6 +2414,13 @@
         "imagePath": "/borpas/387.webp",
         "artist": "Zoocher#7642"
     },
+    "388": {
+        "number": "388",
+        "originalName": "Grotle",
+        "name": "Borple",
+        "imagePath": "/borpas/388.webp",
+        "artist": "avatoh#9616"
+    },
     "389": {
         "number": "389",
         "originalName": "Torterra",
@@ -2449,6 +2456,13 @@
         "imagePath": "/borpas/393.webp",
         "artist": "Beeched_whale#3864"
     },
+    "394": {
+        "number": "394",
+        "originalName": "Prinplup",
+        "name": "Pricklup",
+        "imagePath": "/borpas/394.webp",
+        "artist": "avatoh#9616 "
+    },
     "395": {
         "number": "395",
         "originalName": "Empoleon",
@@ -2482,6 +2496,13 @@
         "originalName": "Kricketot",
         "name": "Borpetot",
         "imagePath": "/borpas/401.webp",
+        "artist": "AGT#3766"
+    },
+    "402": {
+        "number": "402",
+        "originalName": "Kricketune",
+        "name": "Borpetune",
+        "imagePath": "/borpas/402.webp",
         "artist": "AGT#3766"
     },
     "403": {
@@ -2750,6 +2771,13 @@
         "imagePath": "/borpas/445.webp",
         "artist": "Ayyzaz#9591"
     },
+    "446": {
+        "number": "446",
+        "originalName": "Munchlax",
+        "name": "Borplax",
+        "imagePath": "/borpas/446.webp",
+        "artist": "avatoh#9616 "
+    },
     "447": {
         "number": "447",
         "originalName": "Riolu",
@@ -2826,6 +2854,13 @@
         "name": "Borpvile",
         "imagePath": "/borpas/461.webp",
         "artist": "plebbot#2834"
+    },
+    "465": {
+        "number": "465",
+        "originalName": "Tangrowth",
+        "name": "Cumgrowth",
+        "imagePath": "/borpas/465.webp",
+        "artist": "Multinge#3068"
     },
     "466": {
         "number": "466",
@@ -2988,6 +3023,13 @@
         "imagePath": "/borpas/495.webp",
         "artist": "Mudkip#8008"
     },
+    "498": {
+        "number": "498",
+        "originalName": "Tepig",
+        "name": "Borpig",
+        "imagePath": "/borpas/498.webp",
+        "artist": "Pyrus#5966"
+    },
     "509": {
         "number": "509",
         "originalName": "Purrloin",
@@ -3064,6 +3106,20 @@
         "name": "Cumdove",
         "imagePath": "/borpas/519.webp",
         "artist": "VernalEquinox#5513"
+    },
+    "522": {
+        "number": "522",
+        "originalName": "Blitzle",
+        "name": "Blitzorpa",
+        "imagePath": "/borpas/522.webp",
+        "artist": "Pyrus#5966"
+    },
+    "527": {
+        "number": "527",
+        "originalName": "Woobat",
+        "name": "Coombat",
+        "imagePath": "/borpas/527.webp",
+        "artist": "Kiddy#7180"
     },
     "529": {
         "number": "529",
@@ -3184,6 +3240,13 @@
         "imagePath": "/borpas/587.webp",
         "artist": "Plastik#6761"
     },
+    "588": {
+        "number": "588",
+        "originalName": "Karrablast",
+        "name": "Coomblast",
+        "imagePath": "/borpas/588.webp",
+        "artist": "Kiddy#7180"
+    },
     "589": {
         "number": "589",
         "originalName": "Escavalier",
@@ -3303,6 +3366,20 @@
         "imagePath": "/borpas/657.webp",
         "artist": "booty#6434"
     },
+    "667": {
+        "number": "667",
+        "originalName": "Litleo",
+        "name": "Litleorpa",
+        "imagePath": "/borpas/667.webp",
+        "artist": "Bailey#7810"
+    },
+    "668": {
+        "number": "668",
+        "originalName": "Pyroar",
+        "name": "Borproar",
+        "imagePath": "/borpas/668.webp",
+        "artist": "Bailey#7810"
+    },
     "671": {
         "number": "671",
         "originalName": "Florges",
@@ -3394,6 +3471,13 @@
         "imagePath": "/borpas/707.webp",
         "artist": "trin#0973"
     },
+    "709": {
+        "number": "709",
+        "originalName": "Trevenant",
+        "name": "Borpevenant",
+        "imagePath": "/borpas/709.webp",
+        "artist": "Brodizzle#2716"
+    },
     "710": {
         "number": "710",
         "originalName": "Pumpkaboo",
@@ -3429,6 +3513,20 @@
         "imagePath": "/borpas/718.webp",
         "artist": "booty#6434"
     },
+    "728": {
+        "number": "728",
+        "originalName": "Popplio",
+        "name": "Borpplio",
+        "imagePath": "/borpas/728.webp",
+        "artist": "MaxTheBear#5959"
+    },
+    "737": {
+        "number": "737",
+        "originalName": "Charjabug",
+        "name": "Borjabug",
+        "imagePath": "/borpas/737.webp",
+        "artist": "MaxTheBear#5959"
+    },
     "742": {
         "number": "742",
         "originalName": "Cutiefly",
@@ -3448,6 +3546,13 @@
         "originalName": "Rockruff",
         "name": "Borpruff",
         "imagePath": "/borpas/744.webp",
+        "artist": "plebbot#2834"
+    },
+    "745": {
+        "number": "745",
+        "originalName": "Lycanroc (Midday Form)",
+        "name": "Borpcanroc (Midday Form)",
+        "imagePath": "/borpas/745.webp",
         "artist": "plebbot#2834"
     },
     "746": {
@@ -3520,12 +3625,26 @@
         "imagePath": "/borpas/775.webp",
         "artist": "showshank#2112"
     },
+    "777": {
+        "number": "777",
+        "originalName": "Togedemaru",
+        "name": "Borpamaru",
+        "imagePath": "/borpas/777.webp",
+        "artist": "Kiddy#7180"
+    },
     "778": {
         "number": "778",
         "originalName": "Mimikyu",
         "name": "Mimicoom",
         "imagePath": "/borpas/778.webp",
         "artist": "DTK#6969"
+    },
+    "779": {
+        "number": "779",
+        "originalName": "Bruxish",
+        "name": "Borpish",
+        "imagePath": "/borpas/779.webp",
+        "artist": "Phil T Weeb#0001"
     },
     "781": {
         "number": "781",
@@ -3561,6 +3680,20 @@
         "name": "Soborpa",
         "imagePath": "/borpas/816.webp",
         "artist": "Zackyboi#0189"
+    },
+    "824": {
+        "number": "824",
+        "originalName": "Blipbug",
+        "name": "Blipborp (Looking at a puddle)",
+        "imagePath": "/borpas/824.webp",
+        "artist": "MaxTheBear#5959"
+    },
+    "825": {
+        "number": "825",
+        "originalName": "Dottler",
+        "name": "Borpler",
+        "imagePath": "/borpas/825.webp",
+        "artist": "MaxTheBear#5959"
     },
     "831": {
         "number": "831",
