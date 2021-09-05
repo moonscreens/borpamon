@@ -112,7 +112,10 @@ fetch('https://sheets.googleapis.com/v4/spreadsheets/1rEePpILD6k5x8oY9_QIutsxYS8
                     console.log(`${element[0]} already exists`);
                 }
                 if (borpanames[element[2]] !== undefined && removeLetters(element[0]) !== removeLetters(borpanames[element[2]])) {
-                    console.log(`${element[2]} already exists at ${element[0]} and ${borpanames[element[2]]}`);
+                    console.log(`${element[2]} name duplicate at ${element[0]} and ${borpanames[element[2]]}`
+                    +`\n#${element[0]} - ${element[1]} -> ${element[2]}`
+                    +`\n#${borpanames[element[2]]} - ${borpadex[borpanames[element[2]]].originalName} -> ${borpadex[borpanames[element[2]]].name}`
+                    );
                 } else {
                     borpanames[element[2]] = element[0];
                 }
