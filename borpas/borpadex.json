@@ -3156,6 +3156,13 @@
         "imagePath": "/borpas/453.webp",
         "artist": "SpaghettiVictim#4066"
     },
+    "454": {
+        "number": "454",
+        "originalName": "Toxicroak",
+        "name": "Toxicum",
+        "imagePath": "/borpas/454.webp",
+        "artist": "laine#3110"
+    },
     "455": {
         "number": "455",
         "originalName": "Carnivine",
@@ -3169,6 +3176,13 @@
         "name": "Cumeon",
         "imagePath": "/borpas/456.webp",
         "artist": "VernalEquinox#5513"
+    },
+    "457": {
+        "number": "457",
+        "originalName": "Lumineon",
+        "name": "Coomineon",
+        "imagePath": "/borpas/457.webp",
+        "artist": "plebbot#2834"
     },
     "458": {
         "number": "458",
@@ -3197,6 +3211,13 @@
         "name": "Borpazone",
         "imagePath": "/borpas/462.webp",
         "artist": "IcyEspy#5116"
+    },
+    "463": {
+        "number": "463",
+        "originalName": "Lickilicky",
+        "name": "Lickicummy",
+        "imagePath": "/borpas/463.webp",
+        "artist": "Larrel#8603"
     },
     "464": {
         "number": "464",
@@ -3254,6 +3275,13 @@
         "imagePath": "/borpas/471.webp",
         "artist": "plebbot#2834"
     },
+    "472": {
+        "number": "472",
+        "originalName": "Gliscor",
+        "name": "Gliscorpa",
+        "imagePath": "/borpas/472.webp",
+        "artist": "Pyrus#5966"
+    },
     "473": {
         "number": "473",
         "originalName": "Mamoswine",
@@ -3281,6 +3309,13 @@
         "name": "Proborpass",
         "imagePath": "/borpas/476.webp",
         "artist": "Larrel#8603"
+    },
+    "477": {
+        "number": "477",
+        "originalName": "Dusknoir",
+        "name": "Borpnoir",
+        "imagePath": "/borpas/477.webp",
+        "artist": "laine#3110"
     },
     "479": {
         "number": "479",
@@ -3345,6 +3380,13 @@
         "imagePath": "/borpas/488.webp",
         "artist": "jazz#6776"
     },
+    "489": {
+        "number": "489",
+        "originalName": "Phione",
+        "name": "Borphione",
+        "imagePath": "/borpas/489.webp",
+        "artist": "AGT#3766"
+    },
     "490": {
         "number": "490",
         "originalName": "Manaphy",
@@ -3393,6 +3435,13 @@
         "name": "Borpig",
         "imagePath": "/borpas/498.webp",
         "artist": "Pyrus#5966"
+    },
+    "501": {
+        "number": "501",
+        "originalName": "Oshawott",
+        "name": "Cummawott",
+        "imagePath": "/borpas/501.webp",
+        "artist": "HazardDan#0013"
     },
     "509": {
         "number": "509",
@@ -3674,11 +3723,25 @@
         "imagePath": "/borpas/609.webp",
         "artist": "DawnyGoi#4892"
     },
+    "610": {
+        "number": "610",
+        "originalName": "Axew",
+        "name": "Axeborp",
+        "imagePath": "/borpas/610.webp",
+        "artist": "moon2COFFEE#3173"
+    },
     "611": {
         "number": "611",
         "originalName": "Fraxure",
         "name": "Borpaxure",
         "imagePath": "/borpas/611.webp",
+        "artist": "moon2COFFEE#3173"
+    },
+    "612": {
+        "number": "612",
+        "originalName": "Haxorus",
+        "name": "Haxborpus",
+        "imagePath": "/borpas/612.webp",
         "artist": "moon2COFFEE#3173"
     },
     "616": {
@@ -4863,13 +4926,6 @@
         "name": "Cumsbuck Winter",
         "imagePath": "/borpas/586d.webp",
         "artist": "IcyEspy#5116"
-    },
-    "610b": {
-        "number": "610b",
-        "originalName": "Axew",
-        "name": "Axeborp",
-        "imagePath": "/borpas/610b.webp",
-        "artist": "moon2COFFEE#3173"
     },
     "6b": {
         "number": "6b",
