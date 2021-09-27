@@ -3443,11 +3443,39 @@
         "imagePath": "/borpas/495.webp",
         "artist": "Mudkip#8008"
     },
+    "496": {
+        "number": "496",
+        "originalName": "Servine",
+        "name": "Servinorpa",
+        "imagePath": "/borpas/496.webp",
+        "artist": "Pyrus#5966"
+    },
+    "497": {
+        "number": "497",
+        "originalName": "Serperior",
+        "name": "Serperiorpa",
+        "imagePath": "/borpas/497.webp",
+        "artist": "Pyrus#5966"
+    },
     "498": {
         "number": "498",
         "originalName": "Tepig",
         "name": "Borpig",
         "imagePath": "/borpas/498.webp",
+        "artist": "Pyrus#5966"
+    },
+    "499": {
+        "number": "499",
+        "originalName": "Pignite",
+        "name": "Borpignite",
+        "imagePath": "/borpas/499.webp",
+        "artist": "AGT#3766"
+    },
+    "500": {
+        "number": "500",
+        "originalName": "Emboar",
+        "name": "Emborpa",
+        "imagePath": "/borpas/500.webp",
         "artist": "Pyrus#5966"
     },
     "501": {
@@ -3456,6 +3484,13 @@
         "name": "Cummawott",
         "imagePath": "/borpas/501.webp",
         "artist": "HazardDan#0013"
+    },
+    "502": {
+        "number": "502",
+        "originalName": "Dewott",
+        "name": "Deworpatt",
+        "imagePath": "/borpas/502.webp",
+        "artist": "Pyrus#5966"
     },
     "503": {
         "number": "503",
@@ -3548,6 +3583,13 @@
         "imagePath": "/borpas/522.webp",
         "artist": "Pyrus#5966"
     },
+    "524": {
+        "number": "524",
+        "originalName": "Roggenrola",
+        "name": "Borpgenrola",
+        "imagePath": "/borpas/524.webp",
+        "artist": "plebbot#2834"
+    },
     "527": {
         "number": "527",
         "originalName": "Woobat",
@@ -3583,6 +3625,13 @@
         "imagePath": "/borpas/532.webp",
         "artist": "plebbot#2834"
     },
+    "533": {
+        "number": "533",
+        "originalName": "Gurdurr",
+        "name": "Cumdurr",
+        "imagePath": "/borpas/533.webp",
+        "artist": "Pyrus#5966"
+    },
     "534": {
         "number": "534",
         "originalName": "Conkeldurr",
@@ -3610,6 +3659,34 @@
         "name": "Sawkondeeznutslmaogottem",
         "imagePath": "/borpas/539.webp",
         "artist": "123#2982"
+    },
+    "540": {
+        "number": "540",
+        "originalName": "Sewaddle",
+        "name": "Cumwaddle",
+        "imagePath": "/borpas/540.webp",
+        "artist": "plebbot#2834"
+    },
+    "541": {
+        "number": "541",
+        "originalName": "Swadloon",
+        "name": "Swadcoom",
+        "imagePath": "/borpas/541.webp",
+        "artist": "plebbot#2834"
+    },
+    "543": {
+        "number": "543",
+        "originalName": "Venipede",
+        "name": "Venicoom",
+        "imagePath": "/borpas/543.webp",
+        "artist": "Larrel#8603"
+    },
+    "546": {
+        "number": "546",
+        "originalName": "Cottonee",
+        "name": "Borpponee",
+        "imagePath": "/borpas/546.webp",
+        "artist": "Pyrus#5966"
     },
     "547": {
         "number": "547",
@@ -3779,12 +3856,26 @@
         "imagePath": "/borpas/591.webp",
         "artist": "Szkud#1524"
     },
+    "595": {
+        "number": "595",
+        "originalName": "Joltik",
+        "name": "Bortik",
+        "imagePath": "/borpas/595.webp",
+        "artist": "laine#3110"
+    },
     "598": {
         "number": "598",
         "originalName": "Ferrothorn",
         "name": "Ferroborp",
         "imagePath": "/borpas/598.webp",
         "artist": "he#7139"
+    },
+    "602": {
+        "number": "602",
+        "originalName": "Tynamo",
+        "name": "Tynamorpa",
+        "imagePath": "/borpas/602.webp",
+        "artist": "Pyrus#5966"
     },
     "607": {
         "number": "607",
@@ -3859,9 +3950,9 @@
     "618": {
         "number": "618",
         "originalName": "Stunfisk",
-        "name": "Scumfisk",
+        "name": "Cumfisk",
         "imagePath": "/borpas/618.webp",
-        "artist": "MaxTheBear#5959"
+        "artist": "SurfinBird#1957"
     },
     "621": {
         "number": "621",
@@ -3876,6 +3967,13 @@
         "name": "Golpa",
         "imagePath": "/borpas/623.webp",
         "artist": "MajesticBearSong#7509"
+    },
+    "627": {
+        "number": "627",
+        "originalName": "Rufflet",
+        "name": "Cumlet",
+        "imagePath": "/borpas/627.webp",
+        "artist": "plebbot#2834"
     },
     "631": {
         "number": "631",
@@ -3933,6 +4031,13 @@
         "imagePath": "/borpas/647.webp",
         "artist": "Pyrus#5966"
     },
+    "648": {
+        "number": "648",
+        "originalName": "Meloetta",
+        "name": "Borpoetta(Aria Forme)",
+        "imagePath": "/borpas/648.webp",
+        "artist": "plebbot#2834"
+    },
     "649": {
         "number": "649",
         "originalName": "Genesect",
@@ -3961,6 +4066,20 @@
         "imagePath": "/borpas/664.webp",
         "artist": "plebbot#2834"
     },
+    "665": {
+        "number": "665",
+        "originalName": "Spewpa",
+        "name": "Coompa",
+        "imagePath": "/borpas/665.webp",
+        "artist": "plebbot#2834"
+    },
+    "666": {
+        "number": "666",
+        "originalName": "Vivillon",
+        "name": "Coomvillon",
+        "imagePath": "/borpas/666.webp",
+        "artist": "plebbot#2834"
+    },
     "667": {
         "number": "667",
         "originalName": "Litleo",
@@ -3981,6 +4100,13 @@
         "name": "Borpges",
         "imagePath": "/borpas/671.webp",
         "artist": "Axem#6369"
+    },
+    "674": {
+        "number": "674",
+        "originalName": "Pancham",
+        "name": "Borpcham",
+        "imagePath": "/borpas/674.webp",
+        "artist": "plebbot#2834"
     },
     "677": {
         "number": "677",
@@ -4395,6 +4521,20 @@
         "imagePath": "/borpas/825.webp",
         "artist": "MaxTheBear#5959"
     },
+    "829": {
+        "number": "829",
+        "originalName": "Gossifleur",
+        "name": "Cumsifleur",
+        "imagePath": "/borpas/829.webp",
+        "artist": "plebbot#2834"
+    },
+    "830": {
+        "number": "830",
+        "originalName": "Eldegoss",
+        "name": "Eldecoom",
+        "imagePath": "/borpas/830.webp",
+        "artist": "plebbot#2834"
+    },
     "831": {
         "number": "831",
         "originalName": "Wooloo",
@@ -4521,6 +4661,13 @@
         "imagePath": "/borpas/860.webp",
         "artist": "moon2COFFEE#3173"
     },
+    "861": {
+        "number": "861",
+        "originalName": "Grimmsnarl",
+        "name": "Cumsnarl ",
+        "imagePath": "/borpas/861.webp",
+        "artist": "moon2COFFEE#3173"
+    },
     "862": {
         "number": "862",
         "originalName": "Obstagoon",
@@ -4598,6 +4745,13 @@
         "imagePath": "/borpas/883.webp",
         "artist": "Larrel#8603"
     },
+    "884": {
+        "number": "884",
+        "originalName": "Duraludon",
+        "name": "Duralucum",
+        "imagePath": "/borpas/884.webp",
+        "artist": "moon2COFFEE#3173"
+    },
     "887": {
         "number": "887",
         "originalName": "Dragapult",
@@ -4633,12 +4787,12 @@
         "imagePath": "/borpas/898.webp",
         "artist": "Larrel#8603"
     },
-    "647b": {
-        "number": "647b",
-        "originalName": "Keldeo",
-        "name": "Keldeorpa (R)",
-        "imagePath": "/borpas/647b.webp",
-        "artist": "Pyrus#5966"
+    "618b": {
+        "number": "618b",
+        "originalName": "Stunfisk",
+        "name": "Scumfisk",
+        "imagePath": "/borpas/618b.webp",
+        "artist": "MaxTheBear#5959"
     },
     "0b": {
         "number": "0b",
@@ -5116,6 +5270,13 @@
         "imagePath": "/borpas/479b.webp",
         "artist": "DoggoLua#8671"
     },
+    "499b": {
+        "number": "499b",
+        "originalName": "Pignite",
+        "name": "Borpnite",
+        "imagePath": "/borpas/499b.webp",
+        "artist": "Pyrus#5966"
+    },
     "550b": {
         "number": "550b",
         "originalName": "Basculin",
@@ -5171,6 +5332,13 @@
         "name": "Cumsbuck Winter",
         "imagePath": "/borpas/586d.webp",
         "artist": "IcyEspy#5116"
+    },
+    "647b": {
+        "number": "647b",
+        "originalName": "Keldeo",
+        "name": "Keldeorpa (R)",
+        "imagePath": "/borpas/647b.webp",
+        "artist": "Pyrus#5966"
     },
     "6b": {
         "number": "6b",
