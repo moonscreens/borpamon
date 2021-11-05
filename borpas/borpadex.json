@@ -4615,7 +4615,7 @@
     "670": {
         "number": "670",
         "originalName": "Floette",
-        "name": "Borpette",
+        "name": "Cumette",
         "imagePath": "/borpas/670.webp",
         "artist": "plebbot#2834"
     },
@@ -4800,6 +4800,13 @@
         "name": "Borptump",
         "imagePath": "/borpas/708.webp",
         "artist": "plebbot#2834"
+    },
+    "709": {
+        "number": "709",
+        "originalName": "Trevenant",
+        "name": "Borpevenant",
+        "imagePath": "/borpas/709.webp",
+        "artist": "Brodizzle#2716"
     },
     "710": {
         "number": "710",
