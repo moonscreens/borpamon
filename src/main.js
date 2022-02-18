@@ -335,8 +335,8 @@ const questionMarks = [];
 
 
 let lastBorpaTime = Date.now();
-const borpaDuration = 8000;
-const transitionInDuration = 3000;
+const borpaDuration = 8500;
+const transitionInDuration = 4000;
 const transitionOutDuration = 500;
 
 let lastQuestionMark = Date.now();
