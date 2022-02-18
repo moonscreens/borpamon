@@ -219,6 +219,7 @@ function shuffleArray(array) {
 const borpadex = {};
 let borpaKeys = [];
 let borpaIndex = -1;
+const loader = new THREE.TextureLoader();
 fetch('./borpas/borpadex.json?v='+Date.now())
     .then(res => res.json())
     .then(json => {
@@ -226,7 +227,6 @@ fetch('./borpas/borpadex.json?v='+Date.now())
             if (Object.hasOwnProperty.call(json, key)) {
                 const element = json[key];
                 borpadex[key] = {
-                    texture: new THREE.TextureLoader().load(element.imagePath),
                     ...element,
                 }
             }
@@ -258,6 +258,20 @@ function withLeadingZeros(str, length) {
 function changeBorpa() {
     borpaIndex++;
     if (borpaIndex >= borpaKeys.length) borpaIndex = 0;
+
+	if (borpadex[borpaKeys[borpaIndex]].texture) {
+		borpadex[borpaKeys[borpaIndex]].texture.dispose();
+		delete borpadex[borpaKeys[borpaIndex]].texture;
+	}
+
+	//ensure next 3 textures are loaded
+	for (let index = borpaIndex; index < borpaIndex + 3; index++) {
+		const element = borpadex[borpaKeys[index]];
+		if (!element.texture) {
+			element.texture = loader.load(element.imagePath);
+		}
+	}
+
     borpa.material.map = borpadex[borpaKeys[borpaIndex]].texture;
     borpa.material.needsUpdate = true;
 

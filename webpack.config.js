@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
-
+const path = require('path');
 module.exports = {
     entry: './src/main.js',
     mode: 'development',
@@ -21,9 +21,11 @@ module.exports = {
         }),
     ],
     devServer: {
-        contentBase: `${__dirname}/dist`,
-        compress: true,
-        port: 1234,
+		static: {
+			directory: path.join(__dirname, 'dist'),
+		},
+		compress: true,
+		port: 1234,
     },
     module: {
         rules: [
