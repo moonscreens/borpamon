@@ -336,7 +336,7 @@ const questionMarks = [];
 
 let lastBorpaTime = Date.now();
 const borpaDuration = 8000;
-const transitionInDuration = 4000;
+const transitionInDuration = 3000;
 const transitionOutDuration = 500;
 
 let lastQuestionMark = Date.now();
@@ -364,7 +364,7 @@ function draw() {
 
         //stop rotating sooner in the transition
         const p2 = Math.min(1, (Date.now() - lastBorpaTime) / transitionInDuration);
-        borpa.rotation.z = (1 - (Math.pow(1 - p2, 4))) * Math.PI * 4;
+        borpa.rotation.z = (1 - (Math.pow(1 - p2, 3))) * Math.PI * 4;
 
         if (Date.now() - lastQuestionMark > 500 && p2 !== 1) {
             spawnQuestionMark();
@@ -373,7 +373,7 @@ function draw() {
 
     } else if (Date.now() - lastBorpaTime > borpaDuration - transitionOutDuration) {
         const p = (borpaDuration - (Date.now() - lastBorpaTime)) / transitionOutDuration;
-        borpa.rotation.z = (1 - (1 - p) * (1 - p)) * Math.PI * -4;
+        borpa.rotation.z = (1 - Math.pow(1 - p, 3)) * Math.PI * -4;
         borpa.material.opacity = p;
     } else {
         borpaName.material.opacity = 1;
